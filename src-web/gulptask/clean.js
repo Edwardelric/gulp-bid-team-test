@@ -3,13 +3,13 @@
 * */
 
 var gulp = require('gulp');
-var del = require('del');
+var del  = require('del');
 
 var distPath = {
-    'all':'dist',
-    'styles':'app/styles',
-    'autoSpriteCss':'app/images/sprite/sprite.css',
-    'autoSpriteImg':'app/images/sprite/sprite.png'
+    'all'           : 'dist',
+    'styles'        : 'app/styles',
+    'autoSpriteCss' : 'app/images/sprite/sprite.css',
+    'autoSpriteImg' : 'app/images/sprite/sprite.png'
 };
 
 gulp.task('clean',function(){
