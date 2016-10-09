@@ -1,0 +1,138 @@
+body{
+  background:#f6f6f6;
+  min-width: 1200px;
+}
+.main{
+  width:1200px;
+  min-height:400px;
+  margin:0 auto;
+  margin-bottom:30px;
+  &:after {
+    content:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+  }
+}
+.text-warning{
+  color:#fc6e35;
+}
+.txt-warning{
+  display:none;
+  padding-top:8px;
+  color:#fc6e35;
+  @include fontSize(12px);
+}
+.btn-blue{
+  padding:8px 55px;
+  border-radius:0;
+  border:0;
+  background:$blue1;
+  color:$white;
+  &:hover{
+    background:$blue1;
+    opacity:0.6;
+    color:$white;
+  }
+}
+.btn-search{
+  padding:10px 66px;
+  border-radius:0;
+  border:0;
+  box-shadow:none;
+  background:$blue1 url('/images/common/search.png') no-repeat 44px 7px;
+  text-indent:10px;
+  color:$white;
+  &:hover{
+    background:$blue1 url('/images/common/search.png') no-repeat 44px 7px;
+    opacity:0.8;
+    color:#fff;
+  }
+}
+.btn-price{
+  width:180px;
+  height:38px;
+  border-radius:2px;
+  background:#fc6e35;
+  color:$white;
+  line-height:24px;
+  text-align:center;
+  &:hover{
+    background:#f6a17f;
+    color:$white;
+  }
+}
+.form-control{
+  border-radius:0;
+  border:1px solid $gray1;
+}
+.search-form{
+  padding-top:20px;
+  padding-bottom:5px;
+  color:$gray4;
+  @include fontSize(14px);
+  .form-control{
+    height:40px;
+    margin:0 20px 0 4px;
+    line-height:40px;
+    &.time-picker-icon{
+      background:url('/images/common/datepickIcon.png') no-repeat 10px 12px;
+      text-indent:20px;
+      font-family:'Arial';
+    }
+  }
+}
+.form-control{
+  &.time-picker-icon{
+    background:url('/images/common/datepickIcon.png') no-repeat 10px 12px;
+    text-indent:20px;
+    font-family:'Arial';
+  }
+}
+.form-inline{
+  .input-large{
+    width:300px;
+  }
+}
+.padding-top-8{
+  padding-top:8px;
+}
+.operate-main{
+  margin-left:200px;
+}
+.no-result{
+  display:none;
+  padding:30px 0;
+  @include fontSize(14px);
+}
+input:focus{outline: none!important;}
+textarea{
+  min-height:100px;
+}
+.pagination-no-result{
+  padding:20px 0;
+  border-bottom:1px dashed #e4e4e4;
+  font-size:16px;
+  color:#666;
+  text-align:center;
+  img{
+    margin-top:-4px;
+    padding-right:4px;
+    vertical-align:middle;
+  }
+}
+a:focus{text-decoration: none;}
+.tooltip-inner{
+  max-width:300px;
+  background:#00b7ec;
+}
+.tooltip.top{
+  .tooltip-arrow{
+    border-top-color:#00b7ec;
+  }
+}
+.tooltips:hover{
+  z-index:3;
+  background:none;
+}

@@ -1,0 +1,130 @@
+.sidebar{
+  float:left;
+  width:190px;
+  overflow:hidden;
+  margin-top:10px;
+  padding-top:30px;
+  background:#004356;
+  color:$white;
+  @include fontSize(16px);
+  dl{
+    background:url('/images/partials/tenderAccount/arrowClose.png') no-repeat 160px 7px;
+    &.no-bg{
+      background:none;
+    }
+    &.active.no-bg{
+      background:none;
+      dt{
+        background:url('/images/partials/tenderAccount/icon.png') no-repeat -210px 0px;
+        a{
+          color:#00b7ec;
+        }
+      }
+    }
+    &.active{
+      background:url('/images/partials/tenderAccount/arrowOpen.png') no-repeat 160px 7px;
+      dt{
+        color:$blue1;
+        a{
+          color:$blue1;
+        }
+      }
+      .dt-1{
+        background:url('/images/partials/tenderAccount/icon.png') no-repeat -210px -23px;
+      }
+      .dt-2{
+        background:url('/images/partials/tenderAccount/icon.png') no-repeat -210px -47px;
+      }
+      .dt-3{
+        background:url('/images/partials/tenderAccount/icon.png') no-repeat -210px -93px;
+      }
+      .dt-4{
+        background:url('/images/partials/tenderAccount/icon.png') no-repeat -210px -70px;
+      }
+      .dt-5{
+        background:url('/images/partials/tenderAccount/icon.png') no-repeat -210px -115px;
+      }
+      .dt-6{
+        background:url('/images/partials/tenderAccount/icon.png') no-repeat -210px -162px;
+      }
+      dd{
+        display:block;
+      }
+    }
+    dt{
+      margin-bottom:30px;
+      padding-left:50px;
+      a{
+        display:block;
+        color:$white;
+        &:hover{
+          color:$blue1;
+        }
+      }
+      &:hover{
+        color:$blue1;
+        cursor:pointer;
+      }
+      &.dt-0{
+        background:url('/images/partials/tenderAccount/icon.png') no-repeat 20px 0px;
+        &:hover{
+          background:url('/images/partials/tenderAccount/icon.png') no-repeat -210px 0px;
+          cursor:default;
+        }
+      }
+      &.dt-1{
+        background:url('/images/partials/tenderAccount/icon.png') no-repeat 20px -23px;
+        &:hover{
+          background:url('/images/partials/tenderAccount/icon.png') no-repeat -210px -23px;
+        }
+      }
+      &.dt-2{
+        background:url('/images/partials/tenderAccount/icon.png') no-repeat 20px -47px;
+        &:hover{
+          background:url('/images/partials/tenderAccount/icon.png') no-repeat -210px -47px;
+        }
+      }
+      &.dt-3{
+        background:url('/images/partials/tenderAccount/icon.png') no-repeat 20px -93px;
+        &:hover{
+          background:url('/images/partials/tenderAccount/icon.png') no-repeat -210px -93px;
+        }
+      }
+      &.dt-4{
+        background:url('/images/partials/tenderAccount/icon.png') no-repeat 20px -70px;
+        &:hover{
+          background:url('/images/partials/tenderAccount/icon.png') no-repeat -210px -70px;
+        }
+      }
+      &.dt-5{
+        background:url('/images/partials/tenderAccount/icon.png') no-repeat 20px -115px;
+        &:hover{
+          background:url('/images/partials/tenderAccount/icon.png') no-repeat -210px -115px;
+        }
+      }
+      &.dt-6{
+        background:url('/images/partials/tenderAccount/icon.png') no-repeat 20px -162px;
+        &:hover{
+          background:url('/images/partials/tenderAccount/icon.png') no-repeat -210px -162px;
+        }
+      }
+    }
+    dd{
+      display:none;
+      padding-left:50px;
+      padding-bottom:30px;
+      @include fontSize(14px);
+      a{
+        color:$white;
+        &:hover{
+          color:$blue1;
+        }
+      }
+      &.active{
+        a{
+          color:$blue1;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+// 保证金详情
+@import '../../../helpers/mixins';
+@import '../account/_bondUnit';
+
+
+
+// 详情样式 _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+.state-pop {
+    display: none;
+    height: 50px;
+    padding-right: 20px;
+    position: absolute;
+    z-index: 12;
+    left: 136px;
+    top: 500px;
+    border: 1px solid #fccfaa;
+    border-radius: 3px;
+    background: #fff3d8 url("/images/common/lamp.png") no-repeat 20px center;
+    color: #ff6e0f;
+
+    .arrow-up {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        position: absolute;
+        z-index: 21;
+        top: -7px;
+        left: 14px;
+        border-style: solid;
+        border-width: 0 8px 7px;
+        border-color: transparent transparent #fccfaa;
+        -webkit-transition: all .4s ease 0s;
+        -moz-transition: all .4s ease 0s;
+        -o-transition: all .4s ease 0s;
+        transition: all .4s ease 0s;
+
+        .arrow-up-in {
+            content: "";
+            display: block;
+            width: 0;
+            height: 0;
+            position: absolute;
+            top: 2px;
+            left: -8px;
+            z-index: 24;
+            border-style: solid;
+            border-width: 0 8px 7px;
+            border-color: transparent transparent #fff3d8;
+            -webkit-transition: all .4s ease 0s;
+            -moz-transition: all .4s ease 0s;
+            -o-transition: all .4s ease 0s;
+            transition: all .4s ease 0s;
+        }
+    }
+    .state-info {
+        display: inline-block;
+        padding-top: 15px;
+        font-size: 12px;
+        line-height: 20px;
+        padding-left: 38px;
+        vertical-align: middle;
+    }
+}
+

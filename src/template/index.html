@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>my self test</title>
+    <link rel="stylesheet" href="../../src-web/app/styles/main.css">
+    <link rel="stylesheet" href="../../src-web/app/scripts/plugins/My97DatePicker/skin/WdatePicker.css">
+</head>
+<body>
+<div class="navigation" id="navigation">
+    <div class="nav-content">
+        <div class="pull-right">
+            <ul>
+                <li>账户名：
+                    <a href="#" class="user-name"></a>
+                </li>
+                <li>您好!&nbsp;&nbsp; <a href="#">请登录</a></li>
+                <li><a href="#">退出</a></li>
+                <li><a href="#">我的易煤网</a></li>
+                <li id="hoverLi" class="hover-li"><a href="#">网站导航</a>
+                    <div class="nav-list" id="hoverShowDiv">
+                        <div class="nav-right">
+                            <dl>
+                                <dt><h2>我的易煤网</h2></dt>
+                                <dd class="no-border">
+                                    <span class="second"><a href="#">业务管理中心</a></span>
+                                    <span class="second"><a href="#">供应链金融</a></span>
+                                </dd>
+                                <dd class="no-border">
+                                    <span class="second"><a href="#">财务管理中心</a></span>
+                                    <span class="second"><a href="#">阳光采购中心</a></span>
+                                </dd>
+                                <dd class="no-border">
+                                    <span class="second"><a href="#">账户设置</a></span>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="nav-left">
+                            <dl>
+                                <dt><h2>交易服务</h2></dt>
+                                <dd>
+                                    <span class="first"><a href="#">商城</a></span>
+                                    <span><a href="#">供应专区</a></span>
+                                    <span><a href="#">需求专区</a></span>
+                                </dd>
+                                <dd>
+                                    <span class="first"><a href="#">金融</a></span>
+                                    <span><a href="#">阳光采购</a></span>
+                                    <span><a href="#">煤矿专区</a></span>
+                                </dd>
+                                <dd>
+                                    <span class="first"><a href="#">资讯</a></span>
+                                    <span><a href="#">物流</a></span>
+                                    <span><a href="#">数据中心</a></span>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </li>
+                <li id="phoneHelpLi" class="phone-help-li"><a href="#">手机助手</a>
+                    <div class="phoneHelper" id="phoneHelpDiv">
+                        <dl>
+                            <dt><h2>易煤助手</h2></dt>
+                            <dd><img src="../../src-web/app/images/common/yimei_helper.png" alt="易煤助手"></dd>
+                        </dl>
+                        <dl>
+                            <dt><h2>易煤资讯</h2></dt>
+                            <dd><img src="../../src-web/app/images/common/yimei_news.png" alt="易煤资讯"></dd>
+                        </dl>
+                    </div>
+                </li>
+                <li class="no-bg"><a href="#">关于我们</a></li>
+            </ul>
+        </div>
+        <div class="pull-left">
+            <ul>
+                <li class="pull-left">24小时贵宾热线</li>
+                <li class="pull-left li-last">400-960-1180</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="main company-area" id="main">
+    <br>
+    <h2 class="text-center"> gulp test </h2>
+</div>
+<div id="paymentFooter" class="paymentPosition" th:fragment="common_footer(scripts)">
+    <div class="footerInfo">
+        <ul class="footerInfo-fl">
+            <li><a th:href="${siteUrl}+'/aboutUs'">关于易煤</a></li>
+            <li><a th:href="${siteUrl}+'/teach/register'">新手指导</a></li>
+            <li><a th:href="${siteUrl}+'/teach/friendlylink'">友情链接</a></li>
+            <li class="noborder"><a th:href="${siteUrl}+'/aboutUs/contact'">联系我们</a></li>
+        </ul>
+        <p>© 2015 易煤网 All rights reserved&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;和略电子商务(上海)有限公司 ｜ 沪ICP备14052754号</p>
+        <p class="szfw-wrap">
+            <a href="https://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&amp;entyId=1atr5hendjiu232trv8vb6qred7d9yn01mg1nbic8l4vjp1q8m" target="_blank" rel="nofollow">
+                <img src="../../src-web/app/images/common/shgs.png" height="31" width="90">
+            </a>
+            &nbsp;
+            <a id="___szfw_logo___" href="https://credit.szfw.org/CX20150831011158100383.html" target="_blank" rel="nofollow">
+                <img src="../../src-web/app/images/common/cxwz.png" height="31" width="90">
+            </a>
+        </p>
+    </div>
+
+    <script type="text/javascript" src="../../src-web/bower_components/requirejs/require.js"></script>
+    <script type="text/javascript" src="../../src-web/app/scripts/particals/common/config.js"></script>
+    <th:block th:replace="${scripts}" />
+</div>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+@import '../../../helpers/mixins';
+.release-tender-list{
+  .tenderCode{
+    display:none;
+  }
+  .search-condition{
+    padding:20px 0;
+    @include fontSize(14px);
+    .padding-top-8{
+      padding-top:8px;
+    }
+    .btn-search{
+      padding:7px 32px 8px 32px;
+      background:#00b7ec url('/images/common/search.png') no-repeat 16px 4px;
+      color:$white;
+    }
+    .time-picker-icon{
+      background:url("/images/common/datepickIcon.png") no-repeat 10px 9px
+    }
+  }
+  .table-customer {
+    width: 100%;
+    border-top: 1px solid #00b7ec;
+    @include fontSize(14px);
+    line-height: 24px;
+    tr:hover {
+      td {
+        background: #effafd;
+      }
+    }
+    th {
+      background: #f5f5f5;
+      text-align: center;
+    }
+    td {
+      height: 88px;
+      border-bottom: 1px dotted $gray3;
+      word-break: break-all;
+      word-wrap: break-word;
+      .para{
+        width:300px;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        white-space:nowrap;
+      }
+      a{
+        margin:0 10px;
+        color:$blue1;
+      }
+    }
+  }
+  .picker{
+    left:14px;
+    top:38px;
+  }
+}

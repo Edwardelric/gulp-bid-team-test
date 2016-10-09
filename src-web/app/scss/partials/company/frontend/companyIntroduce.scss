@@ -1,0 +1,80 @@
+@import '../../../helpers/_mixins.scss';
+.panel-customer{
+  padding-bottom:0;
+  h2.company-name{
+    padding:50px 0 30px 0;
+    color:$gray4;
+    @include fontSize(24px);
+    span{
+      display:inline-block;
+      padding-right:120px;
+      background:url('/images/partials/companyHome/companyCertif.png') no-repeat right center;
+    }
+  }
+  .intro-content{
+    width:900px;
+    margin:0 auto;
+    line-height:30px;
+    color:$gray4;
+    @include fontSize(14px);
+    .intro-title{
+      a{
+        color:$blue1;
+      }
+    }
+    .toggle-btn{
+      display:none;
+      color:$blue1;
+      cursor:pointer;
+    }
+    .intro-hide{
+      p{
+        opacity:0;
+      }
+    }
+    .intro-detail{
+      overflow:hidden;
+      padding-top:50px;
+      li{
+        float:left;
+        width:50%;
+        color:$gray3;
+        @include fontSize(14px);
+        color:$gray3;
+        strong{
+          padding-right:20px;
+          color:$gray4;
+          font-weight:normal;
+          &.zhengshu{
+            background:url('/images/partials/companyIntroduce/zhengshu.png') no-repeat right center;
+          }
+        }
+      }
+    }
+    .btn-blue{
+      padding:10px 48px;
+      color:$white;
+    }
+    .btn-link{
+      padding:40px 0 40px 0;
+    }
+  }
+  .table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td{
+    vertical-align:middle;
+  }
+  .table{
+    th{
+      font-weight:normal;
+      @include fontSize(14px);
+    }
+    td{
+      @include fontSize(16px);
+      color:$gray4;
+      font-weight:normal;
+      &.td-bg{
+        background:#f9f9f9;
+        @include fontSize(14px);
+      }
+    }
+  }
+}

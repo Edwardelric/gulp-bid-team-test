@@ -1,0 +1,148 @@
+@import '../../../helpers/mixins';
+.sidebar{
+  margin-top:0;
+}
+.purchase-operate{
+  .width-100{
+    width:100px;
+    height:100px;
+    margin-left:10px;
+    padding-top:56px;
+    @include fontSize(14px);
+    color:$white;
+    text-align:center;
+    &.tender{
+      background:#ff6e27 url('/images/partials/tenderAccount/icon3.png') no-repeat center 30px;
+    }
+    &.guide{
+      background:#ff6e27 url('/images/partials/tenderAccount/icon2.png') no-repeat center 30px;
+    }
+  }
+  .supply-info{
+    width:778px;
+    height:101px;
+    margin-top:10px;
+    border:1px solid $gray1;
+    background:$white;
+    overflow:hidden;
+    .position-relative{
+      position:relative;
+      width:100px;
+      height:100px;
+      overflow:hidden;
+      &:hover{
+        .img-mask{
+          opacity:0.7;
+          filter:alpha(opacity=70);
+          transform:scale(1.2);
+        }
+      }
+    }
+    .img-mask{
+      position:absolute;
+      top:0;
+      left:0;
+      width:100px;
+      height:100px;
+      overflow:hidden;
+      padding-top:25px;
+      background:#09060e;
+      color:#fff;
+      @include fontSize(14px);
+      line-height:26px;
+      text-align:center;
+      transition:all 0.5s ease-in;
+      opacity:0;
+      filter:alpha(opacity=0);
+    }
+    .supply-detail{
+      padding-left:55px;
+      li{
+        float:left;
+        margin-right:55px;
+        padding-top:32px;
+        text-align:center;
+        @include fontSize(14px);
+        p{
+          padding-bottom:10px;
+          a{
+            color:$blue1;
+          }
+        }
+      }
+    }
+  }
+  .more-list{
+    color:$blue1;
+  }
+  .panel-body{
+    &.padding-0{
+      padding:0;
+    }
+  }
+  .table-bordered > thead > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > th, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > th, .table-bordered > tfoot > tr > td{
+    border:0;
+  }
+  .table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td{
+    border-top:0;
+  }
+  .table{
+    margin-bottom:0;
+    color:$gray3;
+    @include fontSize(12px);
+    tr{
+      &:hover{
+        background:#effafd;
+      }
+    }
+    td{
+      border-bottom:1px dashed $gray1;
+      vertical-align:middle;
+      dl{
+        padding:14px 0;
+        padding-left:6px;
+        dt{
+          padding:6px 0;
+          strong{
+            color:$gray4;
+            @include fontSize(14px);
+            font-weight:normal;
+          }
+          h2{
+            width:300px;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            white-space:nowrap;
+            color:$gray4;
+            @include fontSize(16px);
+          }
+        }
+        dd{
+          line-height:26px;
+          strong{
+            color:$gray4;
+            font-weight:normal;
+            &.font-size-14{
+              font-size:14px;
+            }
+          }
+        }
+      }
+      a{
+        margin:0 4px;
+        color:$blue1;
+        @include fontSize(14px);
+      }
+      .btn-price{
+        width:auto;
+        height:auto;
+        margin-bottom:6px;
+        padding:0 8px;
+        color:$white;
+      }
+    }
+  }
+  .pagination-wrap{
+    width:auto;
+  }
+}

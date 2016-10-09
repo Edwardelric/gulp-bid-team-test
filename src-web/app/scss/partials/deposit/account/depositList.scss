@@ -1,0 +1,41 @@
+// 保证金列表
+@import '../../../helpers/mixins';
+@import '../account/_bondUnit';
+
+
+
+// 列表详情 _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+.bondList {
+    p {line-height: 24px;  }
+    .pro-name {
+        width:300px;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        white-space:nowrap;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .pro-describe {
+        text-align: left;
+        line-height: 24px;
+        color: #999999;
+    }
+    .pro-val {
+        display: inline-block;
+        width: 120px;
+        height: 24px;
+        overflow: hidden;
+        vertical-align: middle;
+        color: #333333;
+    }
+    .padding-top-8{
+        font-weight:normal;
+    }
+}
+
+
+
+
+
+
+

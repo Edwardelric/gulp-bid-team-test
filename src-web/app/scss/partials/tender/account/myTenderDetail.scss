@@ -1,0 +1,110 @@
+@import '../../../helpers/mixins';
+.my-tender-detail{
+  .panel-customer{
+    padding:0 20px;
+    @include fontSize(14px);
+  }
+  .panel-body{
+    overflow:hidden;
+  }
+  .table{
+    margin-bottom:0;
+  }
+  .bg-gray{
+      background:#f5f5f5;
+  }
+  .table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td{
+    vertical-align:middle;
+    .word-break{
+      word-break:break-all;
+      word-wrap:break-word;
+    }
+  }
+  .project-wrapper{
+    width:100%;
+    margin-bottom:20px;
+    .project-title{
+      width:79px;
+      text-align:center;
+      border:1px solid $gray1;
+      background:#f9f9f9;
+    }
+    .td-border{
+      border-top:1px solid $gray1;
+      border-bottom:1px solid transparent;
+    }
+    .td-border ul {
+      float:left;
+    }
+    li{
+      position:relative;
+      top:1px;
+      float:left;
+      width:110px;
+      overflow:hidden;
+
+      border:1px solid $gray1;
+      border-top:0;
+      border-left:0;
+
+      span{
+        display:block;
+        height:40px;
+        border-bottom:1px solid $gray1;
+        background:#f9f9f9;
+        color:#6f6f6f;
+        @include fontSize(14px);
+        line-height:40px;
+        text-align:center;
+      }
+      p{
+        height:50px;
+        @include fontSize(16px);
+        line-height:50px;
+        text-align:center;
+      }
+      a{
+        color:$blue1;
+      }
+      i{
+        font-style:normal;
+      }
+      &.larger{
+        border-bottom:0px;
+      }
+      &.larger-content,&.larger-content-1,&.larger-content-2,&.larger-content-3{
+        width:770px;
+        border-bottom:0;
+        span{
+          background:$white;
+          text-align:left;
+          text-indent:30px;
+        }
+      }
+      &.larger-content-1{
+        width:110px;
+      }
+      &.larger-content-2{
+        width:330px;
+      }
+      &.larger-content-3{
+        width:330px;
+      }
+      &.bg{
+        span{
+          background:#f9f9f9;
+          text-align:center;
+          text-indent:0;
+        }
+      }
+      &.ncv_border{
+        border-bottom:1px solid $gray1;
+      }
+    }
+  }
+  .download-link{
+    padding-left:20px;
+    background:url('/images/common/spriteIco.png') no-repeat -552px -268px;
+    color:#00b7ec;
+  }
+}

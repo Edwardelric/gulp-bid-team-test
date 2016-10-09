@@ -1,0 +1,30 @@
+@import '../../../helpers/mixins';
+
+#publicPreview {
+  background: #fff;
+  outline: none;
+  padding:20px;
+  font-size: 14px;
+  line-height: 1.6;
+  .previewWrap{
+    padding:60px 100px;
+    border:1px solid #ccc;
+    word-break: break-all;
+
+    h1{font-size: 24px;color:#333;margin-bottom: 40px;}
+
+    .titWrap{
+      padding-bottom:20px;
+      .pl27{padding-left:27px;word-wrap: break-word;}
+    }
+    .pd30{padding-bottom: 30px;}
+  }
+  .btnWrap{
+    text-align: center;
+    margin-top: 20px;
+    a{display: inline-block;width:180px;height:40px;line-height: 40px;text-align: center;font-size: 14px;border-radius: 2px;background: #c7c7c7;color:#fff;}
+    a:hover{opacity: .8;}
+  }
+//  表格样式
+  table,td,tr{border:1px solid #ddd;border-collapse: collapse;padding:5px;}
+}

@@ -1,0 +1,273 @@
+@import '../../../helpers/mixins';
+.announce{
+  .padding-top-30{
+    padding-top:30px;
+  }
+  .supply-info{
+    height:120px;
+    border:1px solid $blue1;
+    background:#eff9ff;
+    overflow:hidden;
+    .position-relative{
+      position:relative;
+      width:120px;
+      height:120px;
+      overflow:hidden;
+      &:hover{
+        .img-mask{
+          opacity:0.7;
+          filter:alpha(opacity=70);
+          transform:scale(1.2);
+        }
+      }
+    }
+    .img-mask{
+      position:absolute;
+      top:0;
+      left:0;
+      width:120px;
+      height:120px;
+      overflow:hidden;
+      padding-top:40px;
+      background:#09060e;
+      color:#fff;
+      @include fontSize(14px);
+      line-height:26px;
+      text-align:center;
+      transition:all 0.5s ease-in;
+      opacity:0;
+      filter:alpha(opacity=0);
+    }
+  }
+  .supply-detail{
+    width:1000px;
+    padding:26px 0 20px 30px;
+    color:$gray3;
+    dl{
+      overflow:hidden;
+    }
+    dt{
+      strong{
+        @include fontSize(18px);
+      }
+    }
+    ul{
+      margin-left:-40px;
+    }
+    li{
+      display:inline-block;
+      max-width:168px;
+      margin-left:20px;
+      padding-left:20px;
+      background:url('/images/common/borderLine.png') no-repeat left center;
+      line-height:50px;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      &.no-border-right{
+        background:none;
+      }
+    }
+    strong{
+      color:$gray4;
+      @include fontSize(14px);
+      font-weight:normal;
+    }
+  }
+  .announce-process{
+    padding:25px 0 30px 0;
+  }
+  .announce-btn-list{
+    width:382px;
+    overflow:hidden;
+    margin:0 auto;
+    padding-bottom:30px;
+    .btn-detail{
+      width:160px;
+      height:40px;
+      margin-right:20px;
+      border-radius:2px;
+      border:1px solid $gray1;
+      color:#00b7ec;
+      line-height:24px;
+      background:url('/images/partials/tenderDetail/btnBg.png') no-repeat left center;
+      &:focus{
+        color:#333333;
+      }
+      img{
+        position:relative;
+        top:-1px;
+        padding-right:10px;
+        vertical-align:middle;
+      }
+    }
+    .btn-price{
+      height:40px;
+      line-height:26px;
+      &.disabled{
+        background:$gray3;
+      }
+    }
+    .deadline{
+      padding-top:10px;
+      color:$gray4;
+      @include fontSize(14px);
+      text-align:center;
+    }
+  }
+  .table-title{
+    overflow:hidden;
+    padding:20px 0 10px 0;
+    dt{
+      padding-right:20px;
+    }
+    dt,dd{
+      float:left;
+      color:$gray3;
+      @include fontSize(14px);
+      strong{
+        color:$gray4;
+        font-weight:normal;
+      }
+    }
+    dd{
+      margin-right:30px;
+      padding-right:30px;
+      background:url('/images/common/borderLine.png') no-repeat right 3px;
+      &.no-bg{
+        margin-right:0;
+        padding-right:0;
+        background:none;
+      }
+      strong{
+        display:inline-block;
+        max-width:290px;
+        vertical-align:top;
+      }
+    }
+  }
+  .addQuote{
+    overflow:hidden;
+  }
+  .panel-customer{
+    padding-left:18px;
+    padding-right:18px;
+    .tableWrap{
+      max-width:1164px;
+      margin:10px 0;
+      li{
+        width:166px;
+      }
+    }
+  }
+  .margin-top-0{
+    margin-top:0;
+  }
+  .padding-top-0{
+    padding-top:0;
+  }
+  .padding-0{
+    padding:0;
+  }
+  .rules-list{
+    @include fontSize(14px);
+    line-height:30px;
+    li{
+      list-style-type:disc;
+      strong{
+        @include fontSize(18px);
+      }
+    }
+  }
+  .fix-bottom{
+    position:fixed;
+    bottom:0;
+    left:0;
+    z-index:100;
+    display:none;
+    width:100%;
+    height:100px;
+    border-top:1px solid $gray1;
+    border-bottom:1px solid $gray2;
+    background:$white;
+    .fix-bottom-content{
+      position:relative;
+      width:1200px;
+      margin:0 auto;
+      .border-right-line{
+        width:80px;
+        height:100px;
+        padding-top:32px;
+        background:url('/images/common/borderLine.png') no-repeat right center;
+        color:#03b8ec;
+        font-size:14px;
+        text-align:center;
+        p{
+          padding-top:10px;
+        }
+      }
+      .btn-price{
+        width:184px;
+      }
+      .supply-detail{
+        width:900px;
+        padding:26px 0 10px 20px;
+        @include fontSize(14px);
+        ul{
+          margin-left:-16px;
+          white-space:nowrap;
+        }
+        li{
+          max-width:168px;
+          overflow:hidden;
+          text-overflow:ellipsis;
+          white-space:nowrap;
+          margin-left:4px;
+          padding-left:12px;
+        }
+      }
+      .btn-price{
+        height:100px;
+        color:$white;
+        @include fontSize(24px);
+        text-align:center;
+        span{
+          color:$dark;
+          @include fontSize(14px);
+        }
+        cursor:pointer;
+        a{
+          display:block;
+          height:100px;
+          padding-top:28px;
+          background:#fc6e35;
+          color:$white;
+          &.disabled{
+            background:#999;
+            cursor:pointer;
+          }
+          p{
+            margin-bottom:10px;
+            &.more-padding{
+              padding-top:16px;
+            }
+          }
+        }
+      }
+      .btn-close{
+        position:absolute;
+        top:-60px;
+        right:0;
+        cursor:pointer;
+      }
+    }
+  }
+  .no-data{
+    .rules-list{
+      list-style-type:none;
+      li{
+        list-style-type:none;
+      }
+    }
+  }
+}

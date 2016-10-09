@@ -1,0 +1,28 @@
+{
+  "name": "src-web",
+  "homepage": "https://github.com/yimei180/aegis-bid",
+  "authors": [
+    "Ed_zg <838298008@qq.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "bootstrap-sass": "^3.3.7",
+    "select2": "^4.0.3",
+    "respond": "^1.4.2",
+    "jquery-form": "^3.46.0",
+    "jquery-validation": "^1.15.1",
+    "requirejs": "^2.3.2"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,130 @@
+@import '../../../helpers/mixins';
+.tender-bid{
+  @include fontSize(14px);
+  .bg-gray{
+    background:#f5f5f5;
+  }
+  .table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td{
+    padding:11px 8px;
+  }
+  .panel-body{
+    overflow:hidden;
+    padding-bottom:0;
+    .table{
+      margin-bottom:0;
+      &.tip-table{
+
+      }
+    }
+  }
+  a{
+    color:$blue1;
+  }
+  .tips{
+    padding:10px;
+  }
+  .table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td{
+    vertical-align:middle;
+    .word-break{
+      word-break:break-all;
+      word-wrap:break-word;
+    }
+  }
+  .project-wrapper{
+    width:100%;
+    margin-bottom:20px;
+    .project-title{
+      width:79px;
+      text-align:center;
+      border:1px solid $gray1;
+      background:#f9f9f9;
+    }
+    .td-border{
+      border-top:1px solid $gray1;
+      border-left:1px solid $gray1;
+      border-bottom:1px solid transparent;
+    }
+    .td-border ul {
+      float:left;
+    }
+    li{
+      position:relative;
+      top:1px;
+      float:left;
+      width:150px;
+      overflow:hidden;
+
+      border:1px solid $gray1;
+      border-top:0;
+      border-left:0;
+
+      span{
+        display:block;
+        height:40px;
+        border-bottom:1px solid $gray1;
+        background:#f9f9f9;
+        color:#6f6f6f;
+        @include fontSize(14px);
+        line-height:40px;
+        text-align:center;
+      }
+      p{
+        height:50px;
+        @include fontSize(16px);
+        line-height:50px;
+        text-align:center;
+      }
+      a{
+        color:$blue1;
+      }
+      i{
+        font-style:normal;
+      }
+      &.larger{
+
+      }
+      &.larger-content,&.larger-content-1,&.larger-content-2,&.larger-content-3{
+        width:660px;
+        border-bottom:0;
+        span{
+          background:$white;
+          text-align:left;
+          text-indent:30px;
+        }
+      }
+      &.larger-content-1{
+        width:220px;
+        border-bottom:1px solid $gray1;
+        span{
+          text-indent:0;
+          text-align:center;
+          background:#f9f9f9;
+        }
+      }
+      &.larger-content-2{
+        width:220px;
+        border-bottom:1px solid $gray1;
+      }
+      &.larger-content-3{
+        width:220px;
+      }
+      &.bg{
+        span{
+          background:#f9f9f9;
+          text-align:center;
+          text-indent:0;
+        }
+      }
+    }
+  }
+  .modal.in {
+    .modal-dialog{
+      width:853px;
+    }
+  }
+  .down-link{
+    padding-left:20px;
+    background:url('/images/common/spriteIco.png') no-repeat -550px -268px;
+    color:#00b7ec;
+  }
+}

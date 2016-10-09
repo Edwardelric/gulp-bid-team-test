@@ -1,0 +1,146 @@
+.navigation{
+  min-width:1200px;
+  height:35px;
+  background:$dark;
+  font-size: 12px;
+  @include lineHeight(35px);
+  .nav-content{
+    width:1200px;
+    margin:0 auto;
+    color:$white;
+    .pull-left{
+      &.li-last{
+        @include paddingLeftRight(10px,0);
+        color:$orange;
+        font-family:"Arial";
+        @include fontSize(14px);
+      }
+    }
+    .pull-right{
+      ul {
+        li {
+          position:relative;
+          float:left;
+          height:35px;
+          z-index:89;
+          @include paddingLeftRight(18px, 18px);
+          background: url('../images/common/navborder.png') no-repeat right center;
+          &.hover-li{
+            cursor:pointer;
+            &:hover{
+              background:$white;
+            }
+          }
+          &.phone-help-li{
+            cursor:pointer;
+            &:hover{
+              background:$white;
+            }
+          }
+          &.no-bg{
+            background:none;
+          }
+          &.active{
+            color:$blue1;
+            & > a{
+              color:$blue1;
+            }
+          }
+          a{
+            color:$gray1;
+            &:hover{
+              color:$blue1;
+            }
+          }
+          .user-name{
+            display:inline-block;
+            max-width:500px;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            white-space:nowrap;
+            vertical-align:middle;
+          }
+        }
+      }
+    }
+    .nav-list{
+      display:none;
+      position:absolute;
+      top:35px;
+      right:0;
+      z-index:90;
+      @include widthHeight(586px,208px);
+      @include padding(25px,25px);
+      border:1px solid $gray1;
+      border-top:0;
+      background:$white;
+      .nav-left{
+        float:left;
+      }
+      .nav-right{
+        float:right;
+      }
+      dl{
+        dt{
+          h2{
+            margin-bottom:10px;
+            padding-left:8px;
+            border-left:4px solid $blue1;
+            color:$gray4;
+            @include fontSize(14px);
+            @include fontWeight;
+          }
+        }
+        dd{
+          overflow:hidden;
+          padding-left:12px;
+          border-right:1px solid $gray1;
+          &.no-border{
+            border-right:0;
+          }
+          @include fontSize(14px);
+          span{
+            float:left;
+            width:92px;
+            height:36px;
+            @include lineHeight(36px);
+            &.first{
+              width:64px;
+            }
+            &.second{
+              width:120px;
+            }
+            a{
+              color:$gray2;
+              &:hover{
+                color:$blue1;
+              }
+            }
+          }
+        }
+      }
+    }
+    .phoneHelper{
+      display:none;
+      position:absolute;
+      top:35px;
+      right:0;
+      width:385px;
+      height:210px;
+      padding:25px 30px 0 30px;
+      border:1px solid $gray1;
+      border-top:0;
+      background:$white;
+      color:$gray4;
+      text-align:center;
+      dl{
+        float:left;
+        h2{
+          color:$gray4;
+          @include fontSize(14px);
+          @include fontWeight;
+        }
+      }
+    }
+  }
+}

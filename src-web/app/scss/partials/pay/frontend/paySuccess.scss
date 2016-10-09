@@ -1,0 +1,237 @@
+// 支付成功页
+@import '../../../helpers/mixins';
+
+
+.mainWrapper {
+    font-size: 14px;
+    width: 1000px;
+    margin: 20px auto 20px;
+    padding: 25px 25px 40px;
+    background-color: #fff;
+}
+
+// 头部二级导航 _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+$size_font_middle:14px;
+$color_btn_blue: #01b7ec;
+$color_text_white: #fff;
+$color_lightblue: #f3fcff;
+$color_tip_font: #999;
+$color_bg_lightorange: #fffaf7;
+$color_border_gray: #d9d9d9;
+$size_font_middle:14px;
+$size_font_normal: 12px;
+$color_orange: #ff6e0f;
+$ico_bg : "/images/common/spriteIco.png";
+
+
+#subHeader {
+    .subHeaderWrap {
+        min-height: 73px;
+        background: #fff;
+        box-shadow: 0 2px 3px #ddd;
+
+        a {
+            cursor: pointer;
+            outline: none;
+            text-decoration: none;
+        }
+        .hidden-ul {
+            display: none;
+        }
+        .subHeader1000 {
+            width: 1000px;
+            padding-top: 17px;
+            padding-bottom: 8px;
+            margin: 0 auto;
+            height: 79px;
+            a, span {
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 18px;
+                color: #666;
+            }
+            .subHeaderTit {
+                margin-left: 10px;
+                position: relative;
+                top: -2px;
+                i{
+                    font-size: $size_font_middle;
+                }
+            }
+            .tab-cards {
+                display: inline-block;
+                float: right;
+                margin-top: 18px;
+                position: relative;
+                ul {
+                    float: right;
+                    font-size: 18px;
+                    color: #666666;
+                    li {
+                        float: left;
+                        padding: 5px 10px;
+                        position: relative;
+                        a.selected {  color: $color_btn_blue;  }
+                    }
+                }
+                .arrow-blue {
+                    position: absolute;
+                    border-style: solid dashed dashed;
+                    border-color: transparent transparent $color_btn_blue;
+                    bottom: -7px;
+                    border-width: 7px;
+                    left: 23px;
+                }
+                .tab-step-1 {
+                    border-width: 7px;
+                    left: 23px;
+                }
+                .tab-step-2 {
+                    border-width: 7px;
+                    left: 92px;
+                }
+                .tab-step-3 {
+                    border-width: 7px;
+                    left: 186px;
+                }
+                .tab-step-4 {
+                    border-width: 7px;
+                    left: 278px;
+                }
+                .tab-step-5 {
+                    border-width: 7px;
+                    left: 372px;
+                }
+            }
+        }
+        .second-tab {
+            border: 1px solid $color_btn_blue;
+            background-color: $color_btn_blue;
+            font-size: 16px;
+            color: $color_text_white;
+            ul {
+                height: 32px;
+                width: 1000px;
+                margin-left: auto;
+                margin-right: auto;
+                li {
+                    float: left;
+                    width: 100px;
+                    padding: 5px 0 6px 0;
+                    margin: -1px;
+                    text-align: center;
+                    &:hover {
+                        background-color: #8edaf1;
+                    }
+                    a {
+                        color: $color_text_white;
+                    }
+                }
+                li.selected {
+                    background-color: #8edaf1;
+                }
+            }
+        }
+    }
+}
+
+
+
+// 付款成功 _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+.progressDetail{
+    background: $color_lightblue;
+    padding:45px 90px;
+    text-align: center;
+    a.btn_blue{
+        display: block;
+        &:hover{ color:#fff; text-decoration:none; }
+    }
+    h3{
+        font-size:30px;
+        .icon_ok{
+            display: inline-block;
+            zoom: 1;
+            width: 70px;
+            height: 60px;
+            vertical-align: middle;
+            margin-right:10px;
+            background: url($ico_bg) no-repeat -380px -292px;
+        }
+        i{
+            color:$color_orange; margin:0 5px;
+            font-style: normal;
+        }
+    }
+    ul{
+        margin-left:80px; line-height: 24px;
+        span{ color:$color_tip_font; }
+    }
+    .btn_blue{
+        display: inline-block;
+        zoom: 1;
+        width: 140px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        color: #fff;
+        font-size: 16px;
+        background: $color_btn_blue;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+        border-radius: 2px;
+        border: none;
+
+        margin: 20px auto 0;
+        &:hover {
+            opacity: 0.8;
+            filter: alpha(opacity=80);
+        }
+    }
+}
+.security{
+    background-color:$color_bg_lightorange; border-top:1px dashed $color_border_gray;
+    padding:30px 30px 30px 90px;
+    dl{
+        line-height: 24px;
+    }
+    dt{
+        font-size:$size_font_middle; line-height: 24px;
+        .icon_warn{
+            display: inline-block;
+            vertical-align: middle;
+            width: 17px;
+            height: 18px;
+            margin-right:6px;
+            background: url($ico_bg) no-repeat -552px -511px;
+        }
+    }
+    dd{
+        font-size:$size_font_normal; line-height: 24px;
+        span{
+            color:$color_orange;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

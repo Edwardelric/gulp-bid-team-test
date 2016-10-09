@@ -1,0 +1,95 @@
+// 异常提示页面
+@import '../../helpers/mixins';
+
+
+// *公用样式 _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+* {margin: 0; padding: 0;}
+html {
+    background: #ffffff;
+    font-family: Helvetica, Tahoma, SimSun, sans-serif;
+//    font-size: 14px;
+    color: #999;
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+body {background-color: #ffffff; height: auto;}
+
+
+.iBtn {
+    min-width: 140px;
+    height: 40px;
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 38px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    &.mb10 { margin-bottom: 10px; }
+}
+
+//确定
+.iBtn_yes {
+    width: 180px;
+    color: #ffffff;
+    background: #1fb8ea;
+
+    &:link {text-decoration: none;}
+    &:visited {text-decoration: none;}
+    &:hover {
+        text-decoration: none;
+        color: #ffffff;
+        opacity: 0.8;
+        filter: alpha(opacity=80);
+    }
+    &:active {text-decoration: none;}
+}
+
+
+
+
+
+.errorMain {
+    background: #ffffff;
+
+    .error-404 {
+        text-align: center;
+        padding-top: 120px;
+        color: #999999;
+        font-size: 20px;
+    }
+    .error-404 p {
+        padding: 25px 0;
+    }
+    .error-404 .btn-customer {
+        display: block;
+        width: 180px;
+        height: 40px;
+        margin: 0 auto;
+        background: #00b7ec;
+        border: 0;
+        border-radius: 2px;
+        outline: none;
+        line-height: 28px;
+        font-size: 16px;
+    }
+
+    a:link, a:focus {
+        text-decoration: none;
+    }
+
+}
+
+
+
