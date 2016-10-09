@@ -8,5 +8,7 @@
 * gulp 本地编译 sass 和 实时监听 js eslint 的语法
 * gulp build 生成一个 dist 的生产文件夹
 
+[readme 编写测试demo ](https://github.com/guodongxiaren/README/blob/master/README.md)
+
 
 
