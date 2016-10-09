@@ -1,34 +1,12 @@
 # gulp-bid-team-test
-# 这里是一级测试标题
-## 这里是二级测试标题
-### 这里是三级测试标题
+# src 为 页面文件夹  src-web 为前端静态资源文件夹
+##
 
-这里是测试gulp的新项目
-==================
+## 需要安装的内容(src-web目录下)
+* npm install 安装 package.json 的 组件
+* bower install 安装 bower 的组件
+* gulp 本地编译 sass 和 实时监听 js eslint 的语法
+* gulp build 生成一个 dist 的生产文件夹
 
-这里是中标题
----------
 
-    这里是具体的内容,也是本次测试readme的测试
-    这里已经是换行的内容了
-    测试连接www.baidu.com
-    `code is highlight`
-
-## 邀请了 陈路
-
-* [横线](#横线)
-* [标题](#标题)
-* [文本](#文本)
-    * 普通文本
-    * 单行文本
-    * 多行文本
-    * 文字高亮
-    * 换行
-    * 斜体
-    * 粗体
-    * 删除线
-
-`code is highlight`
-
-[这里是测试连接](http://www.baidu.com)
 
