@@ -4,18 +4,22 @@
 
 var gulp   = require('gulp');
 var eslint = require('gulp-eslint');
-
+var uglify = require('gulp-uglify');
 var rev    = require('gulp-rev');
 
 var sourcePath = {
-    'scripts':'app/scripts/**/*',
-    'components':'bower_components'
+    'scripts'   : 'app/scripts/particals/**/*.js',
+    'plugins'   : 'app/scripts/plugins/**/*',
+    'components': 'bower_components/**/*',
+    'rules'     : 'app/scripts/particals/tender/frontend/*.json'
 };
 
 var distPath = {
-    'scripts'   : 'dist/scripts',
-    'components': 'dist/components',
-    'manifest'  : 'dist/rev/'
+    'scripts'   : 'dist/scripts/particals/',
+    'plugins'   : 'dist/scripts/plugins',
+    'components': 'dist/bower_components',
+    'manifest'  : 'dist/rev/',
+    'rules'     : 'dist/scripts/particals/tender/frontend'
 };
 
 gulp.task('eslint',function(){
@@ -37,12 +41,10 @@ gulp.task('eslint',function(){
            "parserOptions": {
                "ecmaVersion": 6,
                "sourceType": "module"
-
-           },
+            }
        }))
        .pipe(eslint.format())
-       .pipe(eslint.failOnError())
-
+       .pipe(eslint.failOnError());
 });
 
 gulp.task('components',function(){
@@ -50,15 +52,22 @@ gulp.task('components',function(){
         .pipe(gulp.dest(distPath.components));
 });
 
-gulp.task('js-release',['components'],function(){
-    gulp.src(sourcePath.scripts)
-        .pipe(rev())
-        .pipe(gulp.dest(distPath.scripts))
-        .pipe(rev.manifest('rev-manifest-js.json'))
-        .pipe(gulp.dest(distPath.manifest) );
+gulp.task('plugins',function(){
+    gulp.src(sourcePath.plugins)
+        .pipe(gulp.dest(distPath.plugins));
 });
 
-gulp.task('watchJs',function(){
-    gulp.watch('app/scripts/particals/**/*.js',['eslint'])
+gulp.task('rulesJSON',function(){
+    gulp.src(sourcePath.rules)
+        .pipe(gulp.dest(distPath.rules));
+});
+
+gulp.task('js-release',['components','plugins','rulesJSON'],function(){
+    gulp.src(sourcePath.scripts)
+        .pipe(uglify())
+        //.pipe(rev())
+        .pipe(gulp.dest(distPath.scripts));
+        //.pipe(rev.manifest('rev-manifest-js.json'))
+        //.pipe(gulp.dest(distPath.manifest) );
 });
 

@@ -1,15 +1,16 @@
 /*
-*   Created by Edward 10/8/2016
-* */
+ *   Created by Edward 10/8/2016
+ * */
 
 var gulp = require('gulp');
 var requireDir = require('require-dir');
+
 requireDir('./gulptask',{ recurse: true });
 
-gulp.task('watch',['watchSass','watchJs']);
+gulp.task('watch',['watchSass']);
 
-gulp.task('dev',['sass','watch']);
+gulp.task('dev',['clean-dev','sass','watch']);
 
-gulp.task('build',['clean','sass-release','js-release']);
+gulp.task('build',['clean-build','sass-release','js-release']);
 
 gulp.task('default',['dev']);

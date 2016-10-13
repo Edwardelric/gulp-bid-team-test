@@ -5,13 +5,20 @@
 var gulp = require('gulp');
 var del  = require('del');
 
-var distPath = {
-    'all'           : 'dist',
-    'styles'        : 'app/styles',
-    'autoSpriteCss' : 'app/images/sprite/sprite.css',
-    'autoSpriteImg' : 'app/images/sprite/sprite.png'
+var sourcePath = {
+    'styles'     : 'app/styles',
+    'spriteImg'  : 'app/images/sprite/auto-sprite.png',
+    'spriteScss' : 'app/scss/components/_auto-sprite.scss'
 };
 
-gulp.task('clean',function(){
-    del.sync([distPath.all,distPath.styles,distPath.autoSpriteCss,distPath.autoSpriteImg]);
+var distPath = {
+    'dist'       : 'dist',
+}
+
+gulp.task('clean-dev',function(){
+    del.sync([sourcePath.styles,sourcePath.spriteImg,sourcePath.spriteScss]);
+});
+
+gulp.task('clean-build',function(){
+    del.sync([distPath.dist]);
 });

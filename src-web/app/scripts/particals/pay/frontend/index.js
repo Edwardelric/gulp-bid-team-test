@@ -121,7 +121,7 @@ require(['jquery','bootstrap-sass','datePicker','common'],function($){
                                     }
                                     _self.removeClass('disabled');
                                 }
-                            })
+                            });
                         }else{
                             $.ajax({
                                 url:'/bondOperate/ReturnDeposit',
@@ -146,7 +146,7 @@ require(['jquery','bootstrap-sass','datePicker','common'],function($){
                                     }
                                     _self.removeClass('disabled');
                                 }
-                            })
+                            });
                         }
                     }else{
                         arrError[1].show();

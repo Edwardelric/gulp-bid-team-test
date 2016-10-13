@@ -1,6 +1,5 @@
 require(['jquery','bootstrap-sass','datePicker','common'],function($){
     $(function(){
-
         (function(){
             // 轮播图效果
             var galleryUl = $('#galleryUl'),
