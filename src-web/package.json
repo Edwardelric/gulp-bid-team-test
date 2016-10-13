@@ -7,8 +7,15 @@
     "clean": "rimraf app/styles/*",
     "autoprefixer": "postcss -u autoprefixer -r app/styles/**/*.css",
     "scss": "node-sass --output-style compact -o app/styles app/scss",
-    "build:css": "npm run clean && npm run scss && npm run autoprefixer",
-    "lint": "eslint app/scripts"
+    "build:styles": "npm run clean && npm run scss && npm run autoprefixer",
+    "lint": "eslint app/scripts",
+    "uglify": "mkdir -p dist/scripts && uglifyjs app/scripts/particals/**/*.js -m -c -o dist/scripts/particals",
+    "build:scripts": "npm run uglify",
+    "imagemin": "imagemin app/images/* -o dist/images",
+    "build:images": "npm run imagemin",
+    "build:dev": "npm run build:styles",
+    "build:release": "npm run build:styles && build:scripts",
+    "watch:css": "onchange \"app/styles/scss\" -- npm run build:css"
   },
   "author": "",
   "license": "ISC",
@@ -28,8 +35,10 @@
   },
   "devDependencies": {
     "autoprefixer": "^6.5.1",
+    "imagemin-cli": "^3.0.0",
     "jshint": "^2.9.3",
     "node-sass": "^3.10.1",
-    "postcss-cli": "^2.6.0"
+    "postcss-cli": "^2.6.0",
+    "uglify": "^0.1.5"
   }
 }
