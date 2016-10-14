@@ -11,9 +11,9 @@
 ### npm scripts 编译测试
 - [x] npm run build:dev 编译 scss 成功
 - [x] npm run uglify 压缩成功 
-- []  npm run uglify 没有保留原始的文件层级关系
+- [ ]  npm run uglify 没有保留原始的文件层级关系
 - [x] npm run imagemin 压缩成功
-- []  npm run imagemin 压缩 gif 的图片会报错 且 没有保留文件层级关系
+- [ ]  npm run imagemin 压缩 gif 的图片会报错 且 没有保留文件层级关系
 
 [npm scripts demo ](http://www.cnblogs.com/zldream1106/p/5204599.html)
 [npm scripts demo github](https://github.com/damonbauer/npm-build-boilerplate/blob/master/package.json)
