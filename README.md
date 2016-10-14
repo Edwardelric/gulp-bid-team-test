@@ -15,8 +15,9 @@
 - [x] npm run imagemin 压缩成功
 - [ ]  npm run imagemin 压缩 gif 的图片会报错 且 没有保留文件层级关系
 
-[npm scripts demo ](http://www.cnblogs.com/zldream1106/p/5204599.html)
-[npm scripts demo github](https://github.com/damonbauer/npm-build-boilerplate/blob/master/package.json)
+[npm scripts demo ](http://www.cnblogs.com/zldream1106/p/5204599.html) <br> 
+
+[npm scripts demo github](https://github.com/damonbauer/npm-build-boilerplate/blob/master/package.json)<br>
 [readme 编写测试demo ](https://github.com/guodongxiaren/README/blob/master/README.md)
 
 
