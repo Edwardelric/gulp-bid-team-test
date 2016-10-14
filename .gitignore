@@ -6,8 +6,12 @@
 *.iws
 *.rdb
 .DS_Store
-src-web/app/styles
+/logs
+/target
+/src-web/app/styles
 dist
 bower_components
+/src/main/resources/generatorConfig.xml
 node_modules
-bower_components
+
+

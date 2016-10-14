@@ -5,17 +5,20 @@
   "main": "gulpfile.js",
   "scripts": {
     "clean": "rimraf app/styles/*",
+    "cleanDist": "rimraf dist/*",
     "autoprefixer": "postcss -u autoprefixer -r app/styles/**/*.css",
     "scss": "node-sass --output-style compact -o app/styles app/scss",
     "build:styles": "npm run clean && npm run scss && npm run autoprefixer",
+    "release:styles": "node-sass --output-style compress -o dist/styles app/scss",
     "lint": "eslint app/scripts",
-    "uglify": "mkdir -p dist/scripts && uglifyjs app/scripts/particals/**/*.js -m -c -o dist/scripts/particals",
-    "build:scripts": "npm run uglify",
-    "imagemin": "imagemin app/images/* -o dist/images",
+    "uglify": "mkdir -p dist/scripts/particals && uglifyjs app/scripts/particals/**/*.js -m -o dist/scripts/partical",
+    "release:scripts": "npm run uglify",
+    "imagemin": "imagemin app/images/**/* -o dist/images",
     "build:images": "npm run imagemin",
     "build:dev": "npm run build:styles",
-    "build:release": "npm run build:styles && build:scripts",
-    "watch:css": "onchange \"app/styles/scss\" -- npm run build:css"
+    "build:release": "npm run cleanDist && npm run release:styles && npm run release:scripts && npm run build:images",
+    "watch:styles": "onchange 'app/styles/**/*.scss' -- npm run build:styles",
+    "postinstall": "npm run build:dev && npm run watch:styles"
   },
   "author": "",
   "license": "ISC",
@@ -38,7 +41,8 @@
     "imagemin-cli": "^3.0.0",
     "jshint": "^2.9.3",
     "node-sass": "^3.10.1",
+    "onchange": "^3.0.2",
     "postcss-cli": "^2.6.0",
-    "uglify": "^0.1.5"
+    "uglify-js": "^2.7.3"
   }
 }

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div id="app">
+    <app-nav v-bind:navlist="navlist"></app-nav>
+    <app-view>
+        <app-sidebar></app-sidebar>
+        <app-content></app-content>
+    </app-view>
+</div>
+<template id="navTpl">
+    <ul class="navigation">
+        <li v-for="item in navlist">{{item.text}}</li>
+    </ul>
+</template>
+<template id="appViewTpl">
+    <div class="content">
+        <slot>如果没有就什么都没有</slot>
+    </div>
+</template>
+<template id="sidebarTpl">
+    <div>
+        <ul>
+            <li>侧边栏浮动1</li>
+            <li>侧边栏浮动2</li>
+            <li>侧边栏浮动3</li>
+        </ul>
+    </div>
+</template>
+<script src="../../src-web/app/scripts/plugins/vue.js"></script>
+<script type="text/javascript">
+Vue.component('appNav',{
+    props:['navlist'],
+    template:'#navTpl'
+});
+Vue.component('appView',{
+    template:'#appViewTpl'
+});
+Vue.component('appSidebar',{
+    template:'#sidebarTpl'
+});
+Vue.component('appContent',{
+    template:'<div>这里是具体的项目内容</div>'
+});
+var vm1 = new Vue({
+    el:'#app',
+    data:{
+        navlist:[
+            {text:'导航1'},
+            {text:'导航2'},
+            {text:'导航3'}
+        ]
+    }
+});
+</script>
+</body>
+</html>
