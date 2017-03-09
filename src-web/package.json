@@ -38,6 +38,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^6.5.1",
+    "gulp-connect": "^5.0.0",
     "imagemin-cli": "^3.0.0",
     "jshint": "^2.9.3",
     "node-sass": "^3.10.1",

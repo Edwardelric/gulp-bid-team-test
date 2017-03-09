@@ -9,6 +9,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var rev          = require('gulp-rev');
 var runSequence  = require('run-sequence');
 var filter       = require('gulp-filter');
+var connect = require('gulp-connect');
 
 var sourcePath = {
     'images'         : 'app/images/**/*',
@@ -60,7 +61,8 @@ function sassFn(){
             browsers: ['> 1%', 'Last 2 versions', 'IE 8'],
             cascade: false
         }))
-        .pipe(gulp.dest(sourcePath.styles));
+        .pipe(gulp.dest(sourcePath.styles))
+        .pipe(connect.reload());
 }
 
 gulp.task('sass',['sprite'],function(){

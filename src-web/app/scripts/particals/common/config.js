@@ -1,5 +1,5 @@
 require.config({
-    // baseUrl: "../../src-web/app/scripts",
+    baseUrl: "./",
     shim: {
         "bootstrap-sass": {
             deps: [
@@ -51,21 +51,21 @@ require.config({
 
     ],
     paths: {
-        "bootstrap-sass": "../../src-web/bower_components/bootstrap-sass/assets/javascripts/bootstrap",
-        jquery: "../../src-web/bower_components/jquery/dist/jquery",
-        requirejs: "../../src-web/bower_components/requirejs/require",
-        select2: "../../src-web/bower_components/select2/dist/js/select2",
-        ueconfig: "../../src-web/plugins/ueditor/ueditor.config",
-        ueall: "../../src-web/plugins/ueditor/ueditor.all",
-        datePicker: "../../src-web/app/scripts/plugins/jQuery.fn.datePicker",
-        common: "../../src-web/app/scripts//particals/common/common",
-        respond: "../../src-web/bower_components/respond/dest/respond.src",
-        validate: "../../src-web/bower_components/validate/validate",
-        "jquery-validation": "../../src-web/bower_components/jquery-validation/dist/jquery.validate",
-        "jquery-form": "../../src-web/bower_components/jquery-form/jquery.form",
-        tmpl: "../../src-web/app/scripts/plugins/jquery.tmpl",
-        uploadify:"../../src-web/app/scripts/plugins/uploadify/jquery.uploadify",
-        simpleAjaxUpload: "../../src-web/app/scripts/plugins/SimpleAjaxUploader"
+        "bootstrap-sass": "bower_components/bootstrap-sass/assets/javascripts/bootstrap",
+        jquery: "bower_components/jquery/dist/jquery",
+        requirejs: "bower_components/requirejs/require",
+        select2: "bower_components/select2/dist/js/select2",
+        ueconfig: "app/scripts/plugins/ueditor/ueditor.config",
+        ueall: "app/scripts/plugins/ueditor/ueditor.all",
+        datePicker: "app/scripts/plugins/jQuery.fn.datePicker",
+        common: "app/scripts//particals/common/common",
+        respond: "bower_components/respond/dest/respond.src",
+        validate: "bower_components/validate/validate",
+        "jquery-validation": "bower_components/jquery-validation/dist/jquery.validate",
+        "jquery-form": "bower_components/jquery-form/jquery.form",
+        tmpl: "app/scripts/plugins/jquery.tmpl",
+        uploadify:"app/scripts/plugins/uploadify/jquery.uploadify",
+        simpleAjaxUpload: "app/scripts/plugins/SimpleAjaxUploader"
     }
 });
 
