@@ -1,0 +1,33 @@
+{
+  "name": "src-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-eslint": "^3.0.1",
+    "gulp-filter": "^4.0.0",
+    "gulp-rev": "^7.1.2",
+    "gulp-rev-collector": "^1.0.5",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp.spritesmith": "^6.2.1",
+    "require-dir": "^0.3.1",
+    "run-sequence": "^1.2.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.5.1",
+    "gulp-connect": "^5.0.0",
+    "imagemin-cli": "^3.0.0",
+    "jshint": "^2.9.3",
+    "node-sass": "^3.10.1",
+    "onchange": "^3.0.2",
+    "postcss-cli": "^2.6.0",
+    "uglify-js": "^2.7.3"
+  }
+}

@@ -1,0 +1,67 @@
+@charset "UTF-8";
+/****** 混合通用的样式 Edited By Edward(2016-08-1) ******/
+.gray { color: #e4e4e4; }
+
+.dark { color: #000; }
+
+.white { color: #fff; }
+
+.display-none { display: none; }
+
+.sidebar { margin-top: 0; }
+
+.purchase-operate .width-100 { width: 100px; height: 100px; margin-left: 10px; padding-top: 56px; font-size: 14px; color: #fff; text-align: center; }
+
+.purchase-operate .width-100.tender { background: #ff6e27 url("/images/partials/tenderAccount/icon3.png") no-repeat center 30px; }
+
+.purchase-operate .width-100.guide { background: #ff6e27 url("/images/partials/tenderAccount/icon2.png") no-repeat center 30px; }
+
+.purchase-operate .supply-info { width: 778px; height: 101px; margin-top: 10px; border: 1px solid #e4e4e4; background: #fff; overflow: hidden; }
+
+.purchase-operate .supply-info .position-relative { position: relative; width: 100px; height: 100px; overflow: hidden; }
+
+.purchase-operate .supply-info .position-relative:hover .img-mask { opacity: 0.7; filter: alpha(opacity=70); -webkit-transform: scale(1.2); transform: scale(1.2); }
+
+.purchase-operate .supply-info .img-mask { position: absolute; top: 0; left: 0; width: 100px; height: 100px; overflow: hidden; padding-top: 25px; background: #09060e; color: #fff; font-size: 14px; line-height: 26px; text-align: center; transition: all 0.5s ease-in; opacity: 0; filter: alpha(opacity=0); }
+
+.purchase-operate .supply-info .supply-detail { padding-left: 55px; }
+
+.purchase-operate .supply-info .supply-detail li { float: left; margin-right: 55px; padding-top: 32px; text-align: center; font-size: 14px; }
+
+.purchase-operate .supply-info .supply-detail li p { padding-bottom: 10px; }
+
+.purchase-operate .supply-info .supply-detail li p a { color: #00b7ec; }
+
+.purchase-operate .more-list { color: #00b7ec; }
+
+.purchase-operate .panel-body.padding-0 { padding: 0; }
+
+.purchase-operate .table-bordered > thead > tr > th, .purchase-operate .table-bordered > thead > tr > td, .purchase-operate .table-bordered > tbody > tr > th, .purchase-operate .table-bordered > tbody > tr > td, .purchase-operate .table-bordered > tfoot > tr > th, .purchase-operate .table-bordered > tfoot > tr > td { border: 0; }
+
+.purchase-operate .table > thead > tr > th, .purchase-operate .table > thead > tr > td, .purchase-operate .table > tbody > tr > th, .purchase-operate .table > tbody > tr > td, .purchase-operate .table > tfoot > tr > th, .purchase-operate .table > tfoot > tr > td { border-top: 0; }
+
+.purchase-operate .table { margin-bottom: 0; color: #999999; font-size: 12px; }
+
+.purchase-operate .table tr:hover { background: #effafd; }
+
+.purchase-operate .table td { border-bottom: 1px dashed #e4e4e4; vertical-align: middle; }
+
+.purchase-operate .table td dl { padding: 14px 0; padding-left: 6px; }
+
+.purchase-operate .table td dl dt { padding: 6px 0; }
+
+.purchase-operate .table td dl dt strong { color: #333333; font-size: 14px; font-weight: normal; }
+
+.purchase-operate .table td dl dt h2 { width: 300px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #333333; font-size: 16px; }
+
+.purchase-operate .table td dl dd { line-height: 26px; }
+
+.purchase-operate .table td dl dd strong { color: #333333; font-weight: normal; }
+
+.purchase-operate .table td dl dd strong.font-size-14 { font-size: 14px; }
+
+.purchase-operate .table td a { margin: 0 4px; color: #00b7ec; font-size: 14px; }
+
+.purchase-operate .table td .btn-price { width: auto; height: auto; margin-bottom: 6px; padding: 0 8px; color: #fff; }
+
+.purchase-operate .pagination-wrap { width: auto; }

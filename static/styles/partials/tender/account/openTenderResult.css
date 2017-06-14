@@ -1,0 +1,314 @@
+@charset "UTF-8";
+/****** 混合通用的样式 Edited By Edward(2016-08-1) ******/
+.gray { color: #e4e4e4; }
+
+.dark { color: #000; }
+
+.white { color: #fff; }
+
+.display-none { display: none; }
+
+.m_OK { margin-left: 20px; color: #ffffff; background: #00b7ec; }
+
+.m_cancel { color: #ffffff; background: #c7c7c7; }
+
+.allContent { width: 1200px; margin-left: auto; margin-right: auto; }
+
+h4.modal-title { font-size: 18px; }
+
+.allContent button:hover { opacity: 0.8; }
+
+.currentLocation { padding: 10px 0; font-size: 12px; }
+
+.currentLocation > * { display: inline-block; }
+
+.content { width: 100%; height: auto; background-color: white; }
+
+.openBidTitle { font-size: 18px; text-align: center; padding-top: 40px; }
+
+.tbInfo { margin-top: 36px; font-size: 12px; padding: 0 10px; }
+
+.tbInfo > * { display: inline-block; }
+
+.key { color: #999999; }
+
+.value { color: #333333; }
+
+.openBidTable { width: 100%; font-size: 12px; border-top: 1px solid #00b7ec; }
+
+.openBidTable th { text-align: center; font-weight: normal; background-color: #e4f7fc; height: 40px; line-height: 40px; color: #037191; }
+
+.emptyBoxTh { width: 12px; height: 12px; border-radius: 3px; border: 1px solid #858585; position: absolute; top: 14px; left: 20px; cursor: pointer; vertical-align: middle; }
+
+.tickBoxTh { background: url("/images/partials/tender/checkbox.png") no-repeat 1px 1px; width: 14px; height: 14px; position: absolute; top: 12px; left: 20px; cursor: pointer; display: none; vertical-align: middle; }
+
+.emptyBoxTd { width: 12px; height: 12px; border-radius: 3px; border: 1px solid #858585; position: absolute; top: 28px; left: 20px; cursor: pointer; }
+
+.tickBoxTd { background: url("/images/partials/tender/checkbox.png") no-repeat 1px 1px; width: 14px; height: 14px; position: absolute; top: 28px; left: 20px; cursor: pointer; display: none; }
+
+.allContent table tbody tr { border-bottom: 1px dotted #dedede; }
+
+.allContent table tbody tr:hover { background-color: #effafd; }
+
+.allContent table td { text-align: center; height: 70px; /*line-height: 70px;*/ }
+
+.openBidTable button:hover { opacity: 0.8; }
+
+.optBtn { width: 50px; height: 26px; line-height: 24px; border: none; border-radius: 2px; background-color: #ff6e27; color: white; position: absolute; top: 21px; right: 5px; outline: none; display: none; }
+
+.opt { width: 50px; height: 26px; display: inline-block; line-height: 26px; border: none; border-radius: 2px; background-color: #01b7ec; color: white; }
+
+.opt:hover { opacity: .8; color: #fff; filter: alpha(opacity=80); }
+
+.opt2 { width: 50px; height: 26px; display: inline-block; line-height: 26px; border: none; border-radius: 2px; background-color: #01b7ec; color: white; cursor: pointer; }
+
+.opt2:hover { opacity: .8; color: #fff; filter: alpha(opacity=80); }
+
+.exportRecord { font-size: 12px; position: relative; height: 38px; line-height: 38px; background-color: #f5f5f5; }
+
+/* .exportRecord >*{ display: inline-block; }*/
+.export { color: #037191; margin-left: 10px; }
+
+.export:hover { color: #01b7ec; }
+
+/*******************************选择评标模板************************/
+.modalContent { padding: 20px 20px; height: 340px; overflow: auto; }
+
+.templateTable { width: 100%; height: auto; font-size: 12px; }
+
+.templateTable th { height: 36px; background-color: #f5f5f5; color: #666666; text-align: center; font-weight: normal; }
+
+.templateTable td { height: 70px; text-align: center; }
+
+.templateTable tbody tr { border-bottom: 1px dotted #dedede; }
+
+/*.radio-blue{*/
+/*position: absolute;*/
+/*left:16px;*/
+/*top:26px;*/
+/*cursor: pointer;*/
+/*}*/
+.radio-empty { position: absolute; left: 16px; top: 26px; cursor: pointer; }
+
+.sureBtn { position: absolute; bottom: 20px; left: 45%; width: 100px; height: 34px; border: none; border-radius: 2px; color: white; font-size: 16px; background-color: #01b7ec; }
+
+.sureBtn:hover { opacity: 0.8; }
+
+.errorTip { margin-top: 10px; padding-right: 20px; font-size: 12px; color: #ff0000; display: none; }
+
+.noTempTip { color: #999999; margin-left: 10px; }
+
+.noSelectTip { color: red; margin-left: 10px; display: none; }
+
+.noTempFloatTip { background: url("/images/partials/tender/tipframe.png") no-repeat; width: 400px; height: 30px; line-height: 30px; padding-left: 10px; position: absolute; left: 80px; bottom: 28px; z-index: 100; display: none; }
+
+/*表格二*/
+.resultTab { width: 100%; height: 40px; line-height: 40px; border-bottom: 2px solid #e8e8e8; font-size: 14px; font-weight: 500; position: relative; }
+
+.separateSign { color: #e8e8e8; margin: 0 10px; }
+
+.currentTab { color: #01b7ec; }
+
+.otherTab { cursor: pointer; }
+
+.otherTab:hover { color: #01b7ec; }
+
+.currentLine { border-bottom: 2px solid #01b7ec; width: 133px; position: absolute; bottom: -2px; left: 0; }
+
+.resultTable { width: 100%; font-size: 12px; }
+
+.resultTable th { text-align: center; font-weight: normal; background-color: #f9f9f9; height: 36px; line-height: 36px; color: #999999; }
+
+.result { width: 100%; height: 40px; margin-top: 45px; }
+
+.resultAmount { padding: 1px; font-size: 14px; font-weight: 500; display: inline-block; }
+
+.resultBtn { width: 140px; height: 40px; border: none; border-radius: 2px; color: white; font-size: 16px; background-color: #ff6e28; display: inline-block; margin-left: 30px; }
+
+.btn-sure:hover { opacity: 0.8; }
+
+.btn { border-radius: 2px; }
+
+.templateName { display: block; width: 430px; padding-left: 80px; color: #000000; }
+
+.modalErrorTip { display: block; margin-top: 10px; padding-right: 30px; text-align: right; font-size: 14px; color: red; }
+
+.exportBtn { width: 86px; height: 28px; background-color: #f8f8f8; font-size: 12px; outline: none; border-radius: 2px; float: right; line-height: 30px; text-align: center; border: 1px solid #e4e4e4; color: #333333; margin-top: -10px; }
+
+.exportBtn.down-link { padding-left: 20px; background: url("/images/common/spriteIco.png") no-repeat -544px -262px; color: #00b7ec; }
+
+.exportBtn:hover { color: #1fb8ea; border: 1px solid #1fb8ea; }
+
+.exportBtn img { width: 15px; height: 15px; margin-top: -5px; }
+
+#body-content .table-info td { text-align: center; height: 42px; padding: 10px 10px; }
+
+#body-content td.no-padding { padding: 10px 0px; }
+
+#body-content td.padding-none { padding: 0; }
+
+#body-content .none { display: none; }
+
+#body-content .radio-btn { margin-left: 20px; display: inline-block; cursor: pointer; vertical-align: middle; width: 14px; height: 14px; background-image: url("/images/partials/tender/radio-empty.png"); }
+
+#body-content i.m-l-0 { margin-left: 0px; }
+
+#body-content i.radio-blue { background-image: url("/images/partials/tender/radio-blue.png"); }
+
+#body-content #tender-main { background-color: #f6f6f6; border-top: #e4e4e4 1px solid; padding-bottom: 20px; }
+
+#body-content #tender-main div { padding: 0; margin-right: 0; }
+
+#body-content #tender-main .breadcrumbNav { width: 1200px; margin-left: auto; margin-right: auto; }
+
+#body-content #tender-main .head a { color: #333333; }
+
+#body-content #tender-main .main-centent { overflow: hidden; width: 1200px; margin-left: auto; margin-right: auto; background-color: white; }
+
+#body-content #tender-main .main-centent .tender-content { width: 1140px; margin-left: 29px; margin-right: 29px; }
+
+#body-content #tender-main .main-centent .tender-title { border-left: 2px solid #31b9e6; margin-top: 25px; padding-left: 16px; font-size: 18px; }
+
+#body-content #tender-main .main-centent #tender-info { margin-top: 20px; border-collapse: collapse; font-size: 12px; }
+
+#body-content #tender-main .main-centent #tender-info td { border: 1px solid #e4e4e4; }
+
+#body-content #tender-main .main-centent #tender-info td.th { background-color: #f9f9f9; color: #999; }
+
+#body-content #tender-main .main-centent #tender-info td.tv { background-color: #ffffff; color: #333333; }
+
+#body-content #tender-main .main-centent #tender-info td.title { padding-left: 10px; text-align: left; font-size: 16px; color: #333333; border-top: solid 1px #31b9e6; background-color: #e4f7fc; }
+
+#body-content #tender-main .main-centent .supply-tender-info { padding-left: 18px; margin-top: 20px; border-left: none; line-height: 42px; vertical-align: middle; background-color: #e4f7fc; border-top: solid 1px #31b9e6; }
+
+#body-content #tender-main .main-centent .detail-info { margin-bottom: 20px; color: #333333; }
+
+#body-content #tender-main .main-centent .detail-info .radio-type { margin-top: 20px; margin-left: 18px; }
+
+#body-content #tender-main .main-centent .detail-info .radio-type .lable { width: 100px; font-size: 14px; display: inline-block; vertical-align: middle; }
+
+#body-content #tender-main .main-centent .detail-info .radio-type .radio-lable { font-size: 12px; width: 85px; display: inline-block; vertical-align: middle; }
+
+#body-content #tender-main .main-centent .detail-info .radio-type .lable-85 { width: 85px; }
+
+#body-content #tender-main .main-centent .option { margin-right: 29px; margin-bottom: 10px; float: right; }
+
+#body-content #tender-main .main-centent .option .btn-bid { margin-right: 3px; width: 95px; height: 30px; line-height: 24px; border: 1px solid #ff6e27; border-radius: 2px; background-color: #ff6e27; vertical-align: middle; color: white; font-size: 12px; outline: none; }
+
+#body-content #tender-main .main-centent .option .btn-bid.btn-disable { border: 1px solid #b1b1b1; background-color: #b1b1b1; }
+
+#body-content #tender-main .main-centent .option .btn-export.click { border: 1px solid #00b7ec; color: #00b7ec; }
+
+#body-content #tender-main .main-centent .option .m-l-10 { margin-left: 10px; }
+
+#body-content #tender-main .main-centent .option .btn-export { display: inline-block; cursor: pointer; width: 85px; height: 30px; line-height: 24px; border-radius: 2px; background-color: #fdfdfd; vertical-align: middle; text-align: center; color: #333333; font-size: 12px; outline: none; border: 1px solid #e4e4e4; }
+
+#body-content #tender-main .main-centent .option .btn-export span { vertical-align: middle; }
+
+#body-content #tender-main .main-centent .option .btn-export i { display: inline-block; vertical-align: middle; cursor: pointer; width: 12px; height: 10px; background-image: url("/images/partials/tenderbid_export_icon.png"); }
+
+#body-content #tender-main .main-centent .option .num-account { display: inline-block; vertical-align: middle; text-align: right; margin-right: 20px; width: 200px; height: 24px; line-height: 24px; font-size: 12px; }
+
+#body-content #tender-main .main-centent .option #f-c-red { color: red; }
+
+#body-content #tender-main .main-centent #tender-bid-info, #body-content #tender-main .main-centent #bid-answer-info { margin-top: 20px; margin-bottom: 20px; border-collapse: collapse; font-size: 12px; }
+
+#body-content #tender-main .main-centent #tender-bid-info thead tr, #body-content #tender-main .main-centent #bid-answer-info thead tr { background-color: #f9f9f9; }
+
+#body-content #tender-main .main-centent #tender-bid-info thead tr td.arrow, #body-content #tender-main .main-centent #bid-answer-info thead tr td.arrow { cursor: pointer; }
+
+#body-content #tender-main .main-centent #tender-bid-info thead tr td, #body-content #tender-main .main-centent #bid-answer-info thead tr td { color: #999; }
+
+#body-content #tender-main .main-centent #tender-bid-info thead tr td .price, #body-content #tender-main .main-centent #bid-answer-info thead tr td .price { color: #ff6e27; }
+
+#body-content #tender-main .main-centent #tender-bid-info thead tr td .sort, #body-content #tender-main .main-centent #bid-answer-info thead tr td .sort { padding-right: 15px; position: relative; cursor: pointer; line-height: 11px; display: inline-block; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
+#body-content #tender-main .main-centent #tender-bid-info thead tr td .sort:before, #body-content #tender-main .main-centent #tender-bid-info thead tr td .sort:after, #body-content #tender-main .main-centent #bid-answer-info thead tr td .sort:before, #body-content #tender-main .main-centent #bid-answer-info thead tr td .sort:after { content: ""; position: absolute; right: 0; width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; }
+
+#body-content #tender-main .main-centent #tender-bid-info thead tr td .sort:before, #body-content #tender-main .main-centent #bid-answer-info thead tr td .sort:before { top: -1px; border-bottom: 5px solid #9e9e9e; border-left-width: 6px \9; border-right-width: 6px \9; border-bottom-width: 6px \9; right: -1px \9; }
+
+#body-content #tender-main .main-centent #tender-bid-info thead tr td .sort:after, #body-content #tender-main .main-centent #bid-answer-info thead tr td .sort:after { bottom: 0; border-top: 5px solid #9e9e9e; bottom: -1px \9; }
+
+#body-content #tender-main .main-centent #tender-bid-info thead tr td .sortDown, #body-content #tender-main .main-centent #tender-bid-info thead tr td .sortUp, #body-content #tender-main .main-centent #bid-answer-info thead tr td .sortDown, #body-content #tender-main .main-centent #bid-answer-info thead tr td .sortUp { padding-right: 15px; position: relative; color: #666; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
+#body-content #tender-main .main-centent #tender-bid-info thead tr td .sortDown:after, #body-content #tender-main .main-centent #bid-answer-info thead tr td .sortDown:after { content: ""; position: absolute; right: 0; top: 50%; margin-top: -3px; width: 0px; height: 0px; border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 5px solid #00b7ec; }
+
+#body-content #tender-main .main-centent #tender-bid-info thead tr td .sortUp:after, #body-content #tender-main .main-centent #bid-answer-info thead tr td .sortUp:after { content: ""; position: absolute; right: 0; top: 50%; margin-top: -3px; width: 0px; height: 0px; border-left: 5px solid transparent; border-right: 5px solid transparent; border-bottom: 5px solid #00b7ec; border-left-width: 6px \9; border-right-width: 6px \9; border-bottom-width: 6px \9; }
+
+#body-content #tender-main .main-centent #tender-bid-info tbody tr, #body-content #tender-main .main-centent #bid-answer-info tbody tr { border-bottom: 1px dotted #dedede; }
+
+#body-content #tender-main .main-centent #tender-bid-info tbody a, #body-content #tender-main .main-centent #bid-answer-info tbody a { color: #333333; }
+
+#body-content #tender-main .main-centent #tender-bid-info tbody a.a-bid:hover, #body-content #tender-main .main-centent #bid-answer-info tbody a.a-bid:hover { cursor: pointer; color: #00b7ec; text-decoration: underline; }
+
+#body-content #tender-main .main-centent #tender-bid-info tbody a.a-bid.mg-l, #body-content #tender-main .main-centent #bid-answer-info tbody a.a-bid.mg-l { margin-left: 10px; }
+
+#body-content #tender-main .main-centent #tender-bid-info tbody tr:hover, #body-content #tender-main .main-centent #bid-answer-info tbody tr:hover { background-color: #effafd; }
+
+#body-content #tender-main .main-centent #tender-bid-info tbody tr.empty:hover, #body-content #tender-main .main-centent #bid-answer-info tbody tr.empty:hover { background-color: white; }
+
+#body-content #commit-modal img, #body-content #del-modal img, #body-content #evaluation-modal img, #body-content #template-modal img { margin-top: -3px; }
+
+#body-content #commit-modal a, #body-content #del-modal a, #body-content #evaluation-modal a, #body-content #template-modal a { color: #333333; cursor: pointer; }
+
+#body-content #commit-modal #SetUpTenderTpl, #body-content #del-modal #SetUpTenderTpl, #body-content #evaluation-modal #SetUpTenderTpl, #body-content #template-modal #SetUpTenderTpl { color: #00b7ec; cursor: pointer; }
+
+#body-content #commit-modal a:hover, #body-content #del-modal a:hover, #body-content #evaluation-modal a:hover, #body-content #template-modal a:hover { color: #00b7ec; text-decoration: underline; }
+
+#body-content #commit-modal .bid-modal .dialog-main, #body-content #del-modal .bid-modal .dialog-main, #body-content #evaluation-modal .bid-modal .dialog-main, #body-content #template-modal .bid-modal .dialog-main { border: solid 1px #ebebeb; border-top: solid 2px #00b7ec; margin: 130px auto; vertical-align: middle; }
+
+#body-content #commit-modal .bid-modal .dialog-main .modal-content, #body-content #del-modal .bid-modal .dialog-main .modal-content, #body-content #evaluation-modal .bid-modal .dialog-main .modal-content, #body-content #template-modal .bid-modal .dialog-main .modal-content { border-radius: 0px; border: none; overflow: hidden; }
+
+#body-content #commit-modal .bid-modal .dialog-main .modal-content .modal-header, #body-content #del-modal .bid-modal .dialog-main .modal-content .modal-header, #body-content #evaluation-modal .bid-modal .dialog-main .modal-content .modal-header, #body-content #template-modal .bid-modal .dialog-main .modal-content .modal-header { font-size: 18px; color: #333333; text-align: right; padding-right: 10px; background-color: #f7f7f7; }
+
+#body-content #commit-modal .bid-modal .dialog-main .modal-content .modal-header .modal-title, #body-content #del-modal .bid-modal .dialog-main .modal-content .modal-header .modal-title, #body-content #evaluation-modal .bid-modal .dialog-main .modal-content .modal-header .modal-title, #body-content #template-modal .bid-modal .dialog-main .modal-content .modal-header .modal-title { display: inline-block; float: left; }
+
+#body-content #commit-modal .bid-modal .dialog-main .modal-content .modal-header .modal-cancel, #body-content #del-modal .bid-modal .dialog-main .modal-content .modal-header .modal-cancel, #body-content #evaluation-modal .bid-modal .dialog-main .modal-content .modal-header .modal-cancel, #body-content #template-modal .bid-modal .dialog-main .modal-content .modal-header .modal-cancel { cursor: pointer; display: inline-block; margin-top: auto; margin-bottom: auto; width: 16px; height: 15px; background-image: url("/images/partials/tender/dialog_cancel.png"); }
+
+#body-content #commit-modal .bid-modal .dialog-main .modal-content .modal-header .modal-cancel:hover, #body-content #del-modal .bid-modal .dialog-main .modal-content .modal-header .modal-cancel:hover, #body-content #evaluation-modal .bid-modal .dialog-main .modal-content .modal-header .modal-cancel:hover, #body-content #template-modal .bid-modal .dialog-main .modal-content .modal-header .modal-cancel:hover { background-image: url("/images/partials/tender/dialog_cancel_blue.png"); }
+
+#body-content #commit-modal .bid-modal .dialog-main .modal-content .modal-center, #body-content #del-modal .bid-modal .dialog-main .modal-content .modal-center, #body-content #evaluation-modal .bid-modal .dialog-main .modal-content .modal-center, #body-content #template-modal .bid-modal .dialog-main .modal-content .modal-center { text-align: center; }
+
+#body-content #commit-modal .bid-modal .dialog-main .modal-content .modal-form-line, #body-content #del-modal .bid-modal .dialog-main .modal-content .modal-form-line, #body-content #evaluation-modal .bid-modal .dialog-main .modal-content .modal-form-line, #body-content #template-modal .bid-modal .dialog-main .modal-content .modal-form-line { width: 90%; margin-left: auto; margin-right: auto; }
+
+#body-content #commit-modal .bid-modal .dialog-main .modal-content .modal-form-line .btn-sure, #body-content #del-modal .bid-modal .dialog-main .modal-content .modal-form-line .btn-sure, #body-content #evaluation-modal .bid-modal .dialog-main .modal-content .modal-form-line .btn-sure, #body-content #template-modal .bid-modal .dialog-main .modal-content .modal-form-line .btn-sure { width: 140px; height: 34px; height: 34px; margin-top: 30px; margin-bottom: 30px; color: #ffffff; background-color: #00b7ec; border-radius: 2px; outline: none; border: none; }
+
+#body-content #commit-modal .bid-modal .dialog-main .modal-content .error-span, #body-content #del-modal .bid-modal .dialog-main .modal-content .error-span, #body-content #evaluation-modal .bid-modal .dialog-main .modal-content .error-span, #body-content #template-modal .bid-modal .dialog-main .modal-content .error-span { color: #ff0000; margin-top: 4px; text-align: right; display: none; }
+
+#body-content #commit-modal .bid-modal .dialog-main .modal-content .form-title, #body-content #del-modal .bid-modal .dialog-main .modal-content .form-title, #body-content #evaluation-modal .bid-modal .dialog-main .modal-content .form-title, #body-content #template-modal .bid-modal .dialog-main .modal-content .form-title { margin-top: 36px; font-size: 18px; color: #333333; }
+
+#body-content #commit-modal .bid-modal .dialog-main .modal-content .form-title.del-title, #body-content #del-modal .bid-modal .dialog-main .modal-content .form-title.del-title, #body-content #evaluation-modal .bid-modal .dialog-main .modal-content .form-title.del-title, #body-content #template-modal .bid-modal .dialog-main .modal-content .form-title.del-title { text-align: center; }
+
+#body-content #commit-modal .bid-modal .dialog-main .modal-content .form-content, #body-content #del-modal .bid-modal .dialog-main .modal-content .form-content, #body-content #evaluation-modal .bid-modal .dialog-main .modal-content .form-content, #body-content #template-modal .bid-modal .dialog-main .modal-content .form-content { margin-top: 36px; font-size: 18px; color: #333333; text-align: center; }
+
+#body-content #commit-modal .bid-modal .dialog-main .modal-content .mg-b-40, #body-content #del-modal .bid-modal .dialog-main .modal-content .mg-b-40, #body-content #evaluation-modal .bid-modal .dialog-main .modal-content .mg-b-40, #body-content #template-modal .bid-modal .dialog-main .modal-content .mg-b-40 { margin-bottom: 40px; }
+
+#body-content #commit-modal .bid-modal .dialog-main .modal-content .modal-table, #body-content #del-modal .bid-modal .dialog-main .modal-content .modal-table, #body-content #evaluation-modal .bid-modal .dialog-main .modal-content .modal-table, #body-content #template-modal .bid-modal .dialog-main .modal-content .modal-table { margin-top: 20px; border-collapse: collapse; font-size: 14px; }
+
+#body-content #commit-modal .bid-modal .dialog-main .modal-content .modal-table td, #body-content #del-modal .bid-modal .dialog-main .modal-content .modal-table td, #body-content #evaluation-modal .bid-modal .dialog-main .modal-content .modal-table td, #body-content #template-modal .bid-modal .dialog-main .modal-content .modal-table td { border: 1px solid #e4e4e4; }
+
+#body-content #commit-modal .bid-modal .dialog-main .modal-content .modal-table .border-blue, #body-content #del-modal .bid-modal .dialog-main .modal-content .modal-table .border-blue, #body-content #evaluation-modal .bid-modal .dialog-main .modal-content .modal-table .border-blue, #body-content #template-modal .bid-modal .dialog-main .modal-content .modal-table .border-blue { border: 1px solid #00b7ec; }
+
+#body-content #commit-modal .bid-modal .dialog-main .modal-content .modal-table td.th, #body-content #del-modal .bid-modal .dialog-main .modal-content .modal-table td.th, #body-content #evaluation-modal .bid-modal .dialog-main .modal-content .modal-table td.th, #body-content #template-modal .bid-modal .dialog-main .modal-content .modal-table td.th { background-color: #f9f9f9; color: #999; }
+
+#body-content #commit-modal .bid-modal .dialog-main .modal-content .modal-table span.show, #body-content #del-modal .bid-modal .dialog-main .modal-content .modal-table span.show, #body-content #evaluation-modal .bid-modal .dialog-main .modal-content .modal-table span.show, #body-content #template-modal .bid-modal .dialog-main .modal-content .modal-table span.show { display: block; }
+
+#body-content #commit-modal .bid-modal .dialog-main .modal-content .modal-table td input, #body-content #del-modal .bid-modal .dialog-main .modal-content .modal-table td input, #body-content #evaluation-modal .bid-modal .dialog-main .modal-content .modal-table td input, #body-content #template-modal .bid-modal .dialog-main .modal-content .modal-table td input { height: 42px; line-height: 42px; width: 70%; text-align: center; border: none; outline: none; }
+
+#body-content #commit-modal .bid-modal .dialog-main .modal-content .template-content, #body-content #del-modal .bid-modal .dialog-main .modal-content .template-content, #body-content #evaluation-modal .bid-modal .dialog-main .modal-content .template-content, #body-content #template-modal .bid-modal .dialog-main .modal-content .template-content { margin-top: 20px; height: 300px; overflow: auto; }
+
+#body-content #commit-modal .bid-modal .dialog-main .modal-content .template-content .template-table, #body-content #del-modal .bid-modal .dialog-main .modal-content .template-content .template-table, #body-content #evaluation-modal .bid-modal .dialog-main .modal-content .template-content .template-table, #body-content #template-modal .bid-modal .dialog-main .modal-content .template-content .template-table { width: 100%; height: auto; font-size: 12px; text-align: center; }
+
+#body-content #commit-modal .bid-modal .dialog-main .modal-content .template-content .template-table thead, #body-content #del-modal .bid-modal .dialog-main .modal-content .template-content .template-table thead, #body-content #evaluation-modal .bid-modal .dialog-main .modal-content .template-content .template-table thead, #body-content #template-modal .bid-modal .dialog-main .modal-content .template-content .template-table thead { background-color: #f5f5f5; }
+
+#body-content #commit-modal .bid-modal .dialog-main .modal-content .template-content .template-table tbody tr, #body-content #del-modal .bid-modal .dialog-main .modal-content .template-content .template-table tbody tr, #body-content #evaluation-modal .bid-modal .dialog-main .modal-content .template-content .template-table tbody tr, #body-content #template-modal .bid-modal .dialog-main .modal-content .template-content .template-table tbody tr { border-bottom: 1px dotted #dedede; }
+
+#body-content #commit-modal .bid-modal .dialog-main .modal-content .template-content .template-table tbody tr a, #body-content #del-modal .bid-modal .dialog-main .modal-content .template-content .template-table tbody tr a, #body-content #evaluation-modal .bid-modal .dialog-main .modal-content .template-content .template-table tbody tr a, #body-content #template-modal .bid-modal .dialog-main .modal-content .template-content .template-table tbody tr a { word-wrap: break-word; vertical-align: middle; }
+
+#body-content #commit-modal .bid-modal .dialog-main .modal-content .config-color, #body-content #del-modal .bid-modal .dialog-main .modal-content .config-color, #body-content #evaluation-modal .bid-modal .dialog-main .modal-content .config-color, #body-content #template-modal .bid-modal .dialog-main .modal-content .config-color { color: #00ab69; }
+
+#body-content #commit-modal .bid-modal .dialog-main .modal-content .errorTip, #body-content #del-modal .bid-modal .dialog-main .modal-content .errorTip, #body-content #evaluation-modal .bid-modal .dialog-main .modal-content .errorTip, #body-content #template-modal .bid-modal .dialog-main .modal-content .errorTip { color: #ff0000; margin-top: 4px; font-size: 14px; display: none; }
+
+#body-content #commit-modal .bid-modal .dialog-main.del-modal, #body-content #del-modal .bid-modal .dialog-main.del-modal, #body-content #evaluation-modal .bid-modal .dialog-main.del-modal, #body-content #template-modal .bid-modal .dialog-main.del-modal { width: 370px; }
+
+#body-content #commit-modal .bid-modal .dialog-main.eval-modal, #body-content #del-modal .bid-modal .dialog-main.eval-modal, #body-content #evaluation-modal .bid-modal .dialog-main.eval-modal, #body-content #template-modal .bid-modal .dialog-main.eval-modal { width: 500px; }

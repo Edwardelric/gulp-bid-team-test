@@ -1,0 +1,89 @@
+@charset "UTF-8";
+/****** 混合通用的样式 Edited By Edward(2016-08-1) ******/
+.gray { color: #e4e4e4; }
+
+.dark { color: #000; }
+
+.white { color: #fff; }
+
+.display-none { display: none; }
+
+.mainWrapper { font-size: 14px; width: 1000px; margin: 20px auto 20px; padding: 25px 25px 40px; background-color: #fff; }
+
+#subHeader .subHeaderWrap { min-height: 73px; background: #fff; box-shadow: 0 2px 3px #ddd; }
+
+#subHeader .subHeaderWrap a { cursor: pointer; outline: none; text-decoration: none; }
+
+#subHeader .subHeaderWrap .hidden-ul { display: none; }
+
+#subHeader .subHeaderWrap .subHeader1000 { width: 1000px; padding-top: 17px; padding-bottom: 8px; margin: 0 auto; height: 79px; }
+
+#subHeader .subHeaderWrap .subHeader1000 a, #subHeader .subHeaderWrap .subHeader1000 span { display: inline-block; vertical-align: middle; font-size: 18px; color: #666; }
+
+#subHeader .subHeaderWrap .subHeader1000 .subHeaderTit { margin-left: 10px; position: relative; top: -2px; }
+
+#subHeader .subHeaderWrap .subHeader1000 .subHeaderTit i { font-size: 14px; }
+
+#subHeader .subHeaderWrap .subHeader1000 .tab-cards { display: inline-block; float: right; margin-top: 18px; position: relative; }
+
+#subHeader .subHeaderWrap .subHeader1000 .tab-cards ul { float: right; font-size: 18px; color: #666666; }
+
+#subHeader .subHeaderWrap .subHeader1000 .tab-cards ul li { float: left; padding: 5px 10px; position: relative; }
+
+#subHeader .subHeaderWrap .subHeader1000 .tab-cards ul li a.selected { color: #01b7ec; }
+
+#subHeader .subHeaderWrap .subHeader1000 .tab-cards .arrow-blue { position: absolute; border-style: solid dashed dashed; border-color: transparent transparent #01b7ec; bottom: -7px; border-width: 7px; left: 23px; }
+
+#subHeader .subHeaderWrap .subHeader1000 .tab-cards .tab-step-1 { border-width: 7px; left: 23px; }
+
+#subHeader .subHeaderWrap .subHeader1000 .tab-cards .tab-step-2 { border-width: 7px; left: 92px; }
+
+#subHeader .subHeaderWrap .subHeader1000 .tab-cards .tab-step-3 { border-width: 7px; left: 186px; }
+
+#subHeader .subHeaderWrap .subHeader1000 .tab-cards .tab-step-4 { border-width: 7px; left: 278px; }
+
+#subHeader .subHeaderWrap .subHeader1000 .tab-cards .tab-step-5 { border-width: 7px; left: 372px; }
+
+#subHeader .subHeaderWrap .second-tab { border: 1px solid #01b7ec; background-color: #01b7ec; font-size: 16px; color: #fff; }
+
+#subHeader .subHeaderWrap .second-tab ul { height: 32px; width: 1000px; margin-left: auto; margin-right: auto; }
+
+#subHeader .subHeaderWrap .second-tab ul li { float: left; width: 100px; padding: 5px 0 6px 0; margin: -1px; text-align: center; }
+
+#subHeader .subHeaderWrap .second-tab ul li:hover { background-color: #8edaf1; }
+
+#subHeader .subHeaderWrap .second-tab ul li a { color: #fff; }
+
+#subHeader .subHeaderWrap .second-tab ul li.selected { background-color: #8edaf1; }
+
+.progressDetail { background: #f3fcff; padding: 45px 90px; text-align: center; }
+
+.progressDetail a.btn_blue { display: block; }
+
+.progressDetail a.btn_blue:hover { color: #fff; text-decoration: none; }
+
+.progressDetail h3 { font-size: 30px; }
+
+.progressDetail h3 .icon_ok { display: inline-block; zoom: 1; width: 70px; height: 60px; vertical-align: middle; margin-right: 10px; background: url("/images/common/spriteIco.png") no-repeat -380px -292px; }
+
+.progressDetail h3 i { color: #ff6e0f; margin: 0 5px; font-style: normal; }
+
+.progressDetail ul { margin-left: 80px; line-height: 24px; }
+
+.progressDetail ul span { color: #999; }
+
+.progressDetail .btn_blue { display: inline-block; zoom: 1; width: 140px; height: 40px; line-height: 40px; text-align: center; color: #fff; font-size: 16px; background: #01b7ec; border-radius: 2px; border: none; margin: 20px auto 0; }
+
+.progressDetail .btn_blue:hover { opacity: 0.8; filter: alpha(opacity=80); }
+
+.security { background-color: #fffaf7; border-top: 1px dashed #d9d9d9; padding: 30px 30px 30px 90px; }
+
+.security dl { line-height: 24px; }
+
+.security dt { font-size: 14px; line-height: 24px; }
+
+.security dt .icon_warn { display: inline-block; vertical-align: middle; width: 17px; height: 18px; margin-right: 6px; background: url("/images/common/spriteIco.png") no-repeat -552px -511px; }
+
+.security dd { font-size: 12px; line-height: 24px; }
+
+.security dd span { color: #ff6e0f; }

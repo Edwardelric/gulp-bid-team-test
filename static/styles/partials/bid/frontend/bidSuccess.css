@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/****** 混合通用的样式 Edited By Edward(2016-08-1) ******/
+.gray { color: #e4e4e4; }
+
+.dark { color: #000; }
+
+.white { color: #fff; }
+
+.display-none { display: none; }
+
+.bidSuccess .bidSuccessWrap { background: #fff; }
+
+.bidSuccess .bidSuccessWrap .successIconWrap { background: #fff url("/images/partials/bid/yes.png") no-repeat left 88px; margin-left: 430px; padding: 80px 0; }
+
+.bidSuccess .bidSuccessWrap .successIconWrap p { width: 600px; padding-left: 100px; font-size: 14px; color: #666; line-height: 1.6; }
+
+.bidSuccess .bidSuccessWrap .successIconWrap p span { color: #fd6e35; }
+
+.bidSuccess .bidSuccessWrap .successIconWrap p.mainTxt { font-size: 18px; color: #333; font-weight: bold; margin-bottom: 10px; }
+
+.bidSuccess .bidSuccessWrap .successIconWrap .payBtn { width: 180px; height: 40px; line-height: 40px; border-radius: 2px; background: #01b7ec; text-align: center; font-size: 18px; color: #fff; display: block; margin-left: 100px; margin-top: 30px; cursor: pointer; }

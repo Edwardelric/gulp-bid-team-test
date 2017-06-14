@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/****** 混合通用的样式 Edited By Edward(2016-08-1) ******/
+.gray { color: #e4e4e4; }
+
+.dark { color: #000; }
+
+.white { color: #fff; }
+
+.display-none { display: none; }
+
+#publicManage { background: #fff; padding: 20px; margin-left: 200px; outline: none; }
+
+#publicManage .searchWrap { margin-bottom: 20px; font-size: 0; }
+
+#publicManage .searchWrap p { display: inline-block; font-size: 14px; margin-right: 12px; position: relative; }
+
+#publicManage .searchWrap p label { margin-right: 10px; font-weight: normal; color: #333; }
+
+#publicManage .searchWrap p input { width: 170px; height: 40px; border: 1px solid #ccc; line-height: 40px; padding-left: 10px; border-radius: 2px; }
+
+#publicManage .searchWrap p input:focus { border: 1px solid #00b7ec; }
+
+#publicManage .searchWrap p input.submitBtn { background: #00b7ec; color: #fff; line-height: 35px; }
+
+#publicManage .searchWrap p i { position: absolute; right: 10px; top: 13px; background: url("/images/partials/publicRelease/datepickIcon.png"); width: 11px; height: 13px; }
+
+#publicManage .searchWrap p.mr0 { margin-right: 0; }
+
+#publicManage .searchWrap p > * { vertical-align: middle; }
+
+#publicManage .projectLine { display: table; width: 100%; vertical-align: middle; text-align: center; padding: 10px 0; background: #fff; }
+
+#publicManage .greyBg { background: #f5f5f5; color: #666; font-size: 12px; }
+
+#publicManage .projectLine > div { display: table-cell; }
+
+#publicManage .w230 { width: 230px; }
+
+#publicManage .w230 .para { width: 230px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin: 0 auto; }
+
+#publicManage .w150 { width: 150px; }
+
+#publicManage .w94 { width: 94px; }
+
+#publicManage .w110 { width: 110px; }
+
+#publicManage .w80 { width: 80px; }
+
+#publicManage .w96 { width: 96px; }
+
+#publicManage .whiteBg { padding: 24px 0; border-bottom: 1px dashed #ccc; font-size: 14px; }
+
+#publicManage .whiteBg a { color: #11718f; }
+
+#publicManage .whiteBg a:hover { opacity: .8; }
+
+#publicManage .whiteBg b.waitRelease { color: #3ec587; }
+
+#publicManage .whiteBg b.alreadyRelease { color: #000; }
+
+#publicManage .whiteBg b.completeRelease { color: #ff0000; }
+
+#publicManage .whiteBg:hover { background: #effafd; }

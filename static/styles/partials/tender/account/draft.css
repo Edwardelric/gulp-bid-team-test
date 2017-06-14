@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/****** 混合通用的样式 Edited By Edward(2016-08-1) ******/
+.gray { color: #e4e4e4; }
+
+.dark { color: #000; }
+
+.white { color: #fff; }
+
+.display-none { display: none; }
+
+.release-tender-list .tenderCode { display: none; }
+
+.release-tender-list .search-condition { padding: 20px 0; font-size: 14px; }
+
+.release-tender-list .search-condition .padding-top-8 { padding-top: 8px; }
+
+.release-tender-list .search-condition .btn-search { padding: 7px 32px 8px 32px; background: #00b7ec url("/images/common/search.png") no-repeat 16px 4px; color: #fff; }
+
+.release-tender-list .search-condition .time-picker-icon { background: url("/images/common/datepickIcon.png") no-repeat 10px 9px; }
+
+.release-tender-list .table-customer { width: 100%; border-top: 1px solid #00b7ec; font-size: 14px; line-height: 24px; }
+
+.release-tender-list .table-customer tr:hover td { background: #effafd; }
+
+.release-tender-list .table-customer th { background: #f5f5f5; text-align: center; }
+
+.release-tender-list .table-customer td { height: 88px; border-bottom: 1px dotted #999999; word-break: break-all; word-wrap: break-word; }
+
+.release-tender-list .table-customer td .para { width: 300px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.release-tender-list .table-customer td a { margin: 0 10px; color: #00b7ec; }
+
+.release-tender-list .picker { left: 14px; top: 38px; }

@@ -1,0 +1,75 @@
+@charset "UTF-8";
+/****** 混合通用的样式 Edited By Edward(2016-08-1) ******/
+.gray { color: #e4e4e4; }
+
+.dark { color: #000; }
+
+.white { color: #fff; }
+
+.display-none { display: none; }
+
+.bidDetail { background: #fff; margin-left: 210px; padding: 20px; }
+
+.bidDetail .greyBg { background: #f5f5f5; }
+
+.bidDetail .bidHead { border: 1px solid #e4e4e4; color: #333; font-size: 14px; text-align: left; width: 100%; margin-bottom: 20px; }
+
+.bidDetail .bidHead tr, .bidDetail .bidHead td { border: 1px solid #e4e4e4; border-collapse: collapse; height: 40px; padding-left: 10px; }
+
+.bidDetail .bidHead .w120 { width: 120px; color: #666; text-align: center; padding: 0; }
+
+.bidDetail .bidHead .h88 { height: 88px; }
+
+.bidDetail .bidHead td .haveQuote { color: #ff0000; }
+
+.bidDetail .quoteTit { padding-bottom: 10px; }
+
+.bidDetail .quoteTit span { border-left: 2px solid #00b7ec; font-size: 18px; color: #333; font-weight: bold; padding-left: 10px; }
+
+.bidDetail .projectWrap { border: 1px solid #e4e4e4; padding: 20px; overflow: hidden; margin-bottom: 20px; }
+
+.bidDetail .projectTit { font-size: 0; overflow: hidden; margin-bottom: 10px; }
+
+.bidDetail .projectTit > div { float: left; color: #333; font-size: 14px; padding-right: 10px; padding-left: 10px; }
+
+.bidDetail .projectTit .projectName { font-weight: bold; }
+
+.bidDetail .projectTit .projectInfoTit { color: #999; margin-right: 5px; }
+
+.bidDetail .projectTit .projectInfo { background: url("/images/partials/bid/txtLine.png") no-repeat right 2px; }
+
+.bidDetail .projectTit .projectInfo i { font-style: normal; }
+
+.bidDetail .projectTit .w230 { max-width: 230px; display: inline-block; vertical-align: top; }
+
+.bidDetail .projectTit .w220 { max-width: 220px; display: inline-block; vertical-align: top; }
+
+.bidDetail .projectTit .noborder { background: none; }
+
+.bidDetail .quoteWrap { margin-bottom: 10px; display: table; width: 100%; border-collapse: collapse; border-bottom: none; border-right: none; border-top: none; }
+
+.bidDetail .quoteWrap > div { display: table-cell; text-align: center; vertical-align: middle; }
+
+.bidDetail .quoteWrap .quoteName { width: 74px; font-size: 14px; position: relative; }
+
+.bidDetail .quoteWrap .quoteName .quoteNameWrap { position: absolute; border: 1px solid #e4e4e4; width: 100%; height: 100%; left: 0px; top: 0px; }
+
+.bidDetail .quoteWrap .quoteName .quoteNameWrap p { position: relative; top: 50%; margin-top: -8px; }
+
+.bidDetail .quoteWrap .quoteContent { width: 835px; border-left: 1px solid transparent; }
+
+.bidDetail .quoteWrap .quoteContent ul { border-top: 1px solid #e4e4e4; width: auto; float: left; }
+
+.bidDetail .quoteWrap .quoteContent ul li { float: left; border-right: 1px solid #e4e4e4; border-bottom: 1px solid #e4e4e4; width: 139px; }
+
+.bidDetail .quoteWrap .quoteContent ul li.dbwidth { width: 278px; width: 277px\9; }
+
+.bidDetail .quoteWrap .quoteContent ul li div { height: 50px; line-height: 50px; font-size: 12px; color: #333; }
+
+.bidDetail .quoteWrap .quoteContent ul li .font12 { font-size: 12px; }
+
+.bidDetail .quoteWrap .quoteContent ul li .greyBg { border-bottom: 1px solid #e4e4e4; font-size: 12px; color: #999; }
+
+.bidDetail .yellowColor { color: #fc6e35 !important; }
+
+.bidDetail .download-link { padding-left: 20px; background: url("/images/common/spriteIco.png") no-repeat -552px -268px; color: #00b7ec; }

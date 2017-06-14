@@ -1,0 +1,61 @@
+@charset "UTF-8";
+/****** 混合通用的样式 Edited By Edward(2016-08-1) ******/
+.gray { color: #e4e4e4; }
+
+.dark { color: #000; }
+
+.white { color: #fff; }
+
+.display-none { display: none; }
+
+.sidebar { margin-top: 0px; }
+
+.my-tender { background: #fff; }
+
+.my-tender .search-condition { padding: 20px 0; font-size: 14px; }
+
+.my-tender .search-condition .padding-top-8 { padding-top: 8px; }
+
+.my-tender .search-condition .btn-search { padding: 7px 32px 8px 32px; background: #00b7ec url("/images/common/search.png") no-repeat 16px 4px; color: #fff; }
+
+.my-tender .search-condition .picker { left: 15px; top: 38px; }
+
+.my-tender .tab-nav:after { display: inline; clear: both; content: ""; visibility: hidden; height: 0; }
+
+.my-tender .tab-nav { border-bottom: 1px solid #e4e4e4; }
+
+.my-tender .tab-nav ul { position: relative; top: 1px; overflow: hidden; }
+
+.my-tender .tab-nav ul li { float: left; height: 40px; padding: 0 16px; line-height: 40px; font-size: 14px; }
+
+.my-tender .tab-nav ul li a { display: block; height: 40px; }
+
+.my-tender .tab-nav ul li a:hover, .my-tender .tab-nav ul li a.active { border-bottom: 2px solid #00b7ec; color: #00b7ec; }
+
+.my-tender .table-bordered > thead > tr > th, .my-tender .table-bordered > thead > tr > td, .my-tender .table-bordered > tbody > tr > th, .my-tender .table-bordered > tbody > tr > td, .my-tender .table-bordered > tfoot > tr > th, .my-tender .table-bordered > tfoot > tr > td { border: 0; }
+
+.my-tender .table > thead > tr > th, .my-tender .table > thead > tr > td, .my-tender .table > tbody > tr > th, .my-tender .table > tbody > tr > td, .my-tender .table > tfoot > tr > th, .my-tender .table > tfoot > tr > td { border-top: 0; }
+
+.my-tender .table { color: #999999; font-size: 12px; }
+
+.my-tender .table tr:hover { background: #effafd; }
+
+.my-tender .table td { border-bottom: 1px dashed #e4e4e4; vertical-align: middle; }
+
+.my-tender .table td dl { padding: 14px 0; padding-left: 6px; }
+
+.my-tender .table td dl dt { padding: 6px 0; }
+
+.my-tender .table td dl dt strong { color: #333333; font-size: 14px; font-weight: normal; }
+
+.my-tender .table td dl dt h2 { width: 328px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #333333; font-size: 16px; }
+
+.my-tender .table td dl dd { line-height: 26px; }
+
+.my-tender .table td dl dd strong { color: #333333; font-weight: normal; }
+
+.my-tender .table td dl dd strong.font-size-14 { font-size: 14px; }
+
+.my-tender .table td a { margin: 0 4px; color: #00b7ec; font-size: 14px; }
+
+.my-tender .table td .btn-price { width: auto; height: auto; margin-bottom: 6px; padding: 0 8px; color: #fff; }

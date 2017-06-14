@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/****** 混合通用的样式 Edited By Edward(2016-08-1) ******/
+.gray { color: #e4e4e4; }
+
+.dark { color: #000; }
+
+.white { color: #fff; }
+
+.display-none { display: none; }
+
+* { margin: 0; padding: 0; }
+
+html { background: #ffffff; font-family: Helvetica, Tahoma, SimSun, sans-serif; color: #999; -ms-text-size-adjust: 100%; /* 2 */ -webkit-text-size-adjust: 100%; /* 2 */ }
+
+body { background-color: #ffffff; height: auto; }
+
+.iBtn { min-width: 140px; height: 40px; display: inline-block; margin-bottom: 0; font-size: 16px; font-weight: normal; line-height: 38px; text-align: center; white-space: nowrap; vertical-align: middle; -ms-touch-action: manipulation; touch-action: manipulation; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; background-image: none; border: 1px solid transparent; border-radius: 2px; }
+
+.iBtn.mb10 { margin-bottom: 10px; }
+
+.iBtn_yes { width: 180px; color: #ffffff; background: #1fb8ea; }
+
+.iBtn_yes:link { text-decoration: none; }
+
+.iBtn_yes:visited { text-decoration: none; }
+
+.iBtn_yes:hover { text-decoration: none; color: #ffffff; opacity: 0.8; filter: alpha(opacity=80); }
+
+.iBtn_yes:active { text-decoration: none; }
+
+.errorMain { background: #ffffff; }
+
+.errorMain .error-404 { text-align: center; padding-top: 120px; color: #999999; font-size: 20px; }
+
+.errorMain .error-404 p { padding: 25px 0; }
+
+.errorMain .error-404 .btn-customer { display: block; width: 180px; height: 40px; margin: 0 auto; background: #00b7ec; border: 0; border-radius: 2px; outline: none; line-height: 28px; font-size: 16px; }
+
+.errorMain a:link, .errorMain a:focus { text-decoration: none; }

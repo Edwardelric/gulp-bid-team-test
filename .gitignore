@@ -10,7 +10,7 @@
 /target
 /src-web/app/styles
 dist
-bower_components
+/bower_components
 /src/main/resources/generatorConfig.xml
 node_modules
 
