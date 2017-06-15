@@ -8,9 +8,9 @@
 .DS_Store
 /logs
 /target
-/src-web/app/styles
-dist
+/dist
 /bower_components
+/static/styles/
 /src/main/resources/generatorConfig.xml
 node_modules
 

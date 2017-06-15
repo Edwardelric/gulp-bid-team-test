@@ -8,21 +8,27 @@ var connect = require('gulp-connect');
 
 requireDir('./gulptask',{ recurse: true });
 
-gulp.task('watch',['watchSass']);
 
-gulp.task('dev',['clean-dev','sass','watch']);
 
-gulp.task('prdbuild',['clean-build','sass-release','js-release']);
+// gulp.task('watch',['watchSass']);
 
-gulp.task('prebuild',['clean-build','sass-release','js-release']);
+// gulp.task('dev',['clean-dev','sass','watch']);
 
-gulp.task('sitbuild',['clean-build','sass-release','js-release']);
+// gulp.task('prdbuild',['clean-build','sass-release','js-release']);
+//
+// gulp.task('prebuild',['clean-build','sass-release','js-release']);
+//
+// gulp.task('sitbuild',['clean-build','sass-release','js-release']);
 
-gulp.task('default',['dev', 'connect']);
+
+
+
+gulp.task('watch', ['watchTpl', 'watchScss']);
+
+gulp.task('default',['connect', 'scss','watch']);
 
 gulp.task('connect', function() {
     connect.server({
-        root: './',
         port: 8888,
         livereload: true
     });
