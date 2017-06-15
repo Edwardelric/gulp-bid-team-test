@@ -1,23 +1,64 @@
-# gulp-bid-team-test
-## src 为 页面文件夹  src-web 为前端静态资源文件夹
+# gulp + vue2.0 开发活动页
 
+## 技术栈
+  gulp + vue2.0 + ES6 + scss + css3
 
-### 需要安装的内容(src-web目录下)
-* npm install 安装 package.json 的 组件
-* bower install 安装 bower 的组件
-* gulp 本地编译 sass 和 实时监听 js eslint 的语法
-* gulp build 生成一个 dist 的生产文件夹
+## 运行环境
+  * node：v8.0.0
+  * npm:  v5.0.0
 
-### npm scripts 编译测试
-- [x] npm run build:dev 编译 scss 成功
-- [x] npm run uglify 压缩成功 
-- [ ]  npm run uglify 没有保留原始的文件层级关系
-- [x] npm run imagemin 压缩成功
-- [ ]  npm run imagemin 压缩 gif 的图片会报错 且 没有保留文件层级关系
+## 测试环境
+  * sit 域名：h.jia.chexiangsit.com
+  * pre 域名：h.jia.chexiangpre.com
+  * prd 域名：h.jia.chexiang.com
 
-[npm scripts demo ](http://www.cnblogs.com/zldream1106/p/5204599.html) <br> 
-[npm scripts demo github](https://github.com/damonbauer/npm-build-boilerplate/blob/master/package.json)<br>
-[readme 编写测试demo ](https://github.com/guodongxiaren/README/blob/master/README.md)
+## 项目启动
+  * git clone
+  * npm install
+  * gulp 本地开发
+  * gulp sitbuild sit 环境测试
+  * gulp prebuild pre 环境测试
+  * gulp prdbuild prd 环境测试
 
+## 工程目的
+  * scss 编辑
+  * ES6 编译
+  * vue数据双向绑定和js模块化
+  * 静态资源版本号控制
 
+## 技术要点：
+  * 暂无
+
+## 项目结构
+   ```.
+    ├── gulptask                                         
+    │   ├── clean.js                              
+    │   ├── replacetpl.js                               
+    │   ├── sass.js                              
+    │   ├── scripts.js                              
+    ├── static                                          
+    │   ├── scss
+    │   │   ├── base
+    │   │   │   └── _reset.scss                
+    │   │   ├── helper                                           
+    │   │   │   └── _mixin.scss                
+    │   │   ├── layout                                      
+    │   │   │   └── header.scss                       
+    │   │   │   └── footer.scss                        
+    │   │   ├── components                                               
+    │   │   │   └── swiper.scss                      
+    │   │   ├── page
+    │   │   │   └── home.scss                       
+    │   │   └── common.scss
+    ├── view
+    │   ├── layout
+    │   │   │   └── header.html
+    │   │   │   └── footer.html
+    │   ├── components
+    │   ├── pages
+    │   │   │   └── home.html
+    │   ├── index.html
+    └── index.html                                
+    .
+    ```
 
