@@ -1,7 +1,7 @@
 # gulp + vue2.0 开发活动页
 
 ## 技术栈
-  gulp + vue2.0 + ES6 + scss + css3
+  gulp + scss + sui + requirejs + bower
 
 ## 运行环境
   * node：v8.0.0
@@ -14,11 +14,13 @@
 
 ## 项目启动
   * git clone
+  * bower install
   * npm install
   * gulp 本地开发
   * gulp sitbuild sit 环境测试
   * gulp prebuild pre 环境测试
   * gulp prdbuild prd 环境测试
+  * eslint --init
 
 ## 工程目的
   * scss 编辑

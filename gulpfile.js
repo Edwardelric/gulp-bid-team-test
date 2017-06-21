@@ -23,9 +23,11 @@ requireDir('./gulptask',{ recurse: true });
 
 
 
-gulp.task('watch', ['watchTpl', 'watchScss']);
+gulp.task('watch', ['watch-html', 'watch-sass', 'watch-scripts']);
 
-gulp.task('default',['connect', 'scss','watch']);
+gulp.task('compile-sass', ['sass']);
+
+gulp.task('default',['connect', 'clean', 'compile-sass', 'watch']);
 
 gulp.task('connect', function() {
     connect.server({

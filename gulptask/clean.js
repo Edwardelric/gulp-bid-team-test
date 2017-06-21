@@ -1,24 +1,19 @@
 /*
-*   Created by Edward 10/8/2016
+*    Created by Edward 15/6/2017
 * */
 
 var gulp = require('gulp');
 var del  = require('del');
 
-var sourcePath = {
-    'styles'     : 'static/styles',
-    'spriteImg'  : 'static/images/sprite/auto-sprite.png',
-    'spriteScss' : 'static/scss/components/_auto-sprite.scss'
+var path = {
+    'sourcePath': './static/styles/**/*.scss',
+    'distPath': './dist/static/'
 };
 
-var distPath = {
-    'dist'       : 'dist',
-}
-
-gulp.task('clean-dev',function(){
-    del.sync([sourcePath.styles,sourcePath.spriteImg,sourcePath.spriteScss]);
+gulp.task('clean',function(){
+    del.sync([path.sourcePath]);
 });
 
 gulp.task('clean-build',function(){
-    del.sync([distPath.dist]);
+    del.sync([path.distPath]);
 });

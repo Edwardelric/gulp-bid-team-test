@@ -7,16 +7,14 @@ var connect      = require('gulp-connect');
 var sass         = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 
-var config      = require('../config/index.js');
-
 var path = {
-    'originPath': './static/scss/page/active20170612/index.scss',
-    'sourcePath': './',
-    'distPath': '../dist/styles/page/' + config.path + '**/*.css'
+    'sourcePath': './static/scss/**/*.scss',
+    'compilePath': './static/styles/',
+    'distPath': './dist/static/scss/'
 };
 
-gulp.task('scss', function () {
-    gulp.src(path.originPath)
+gulp.task('sass', function () {
+    gulp.src(path.sourcePath)
         .pipe(sass({
             precision       : 10,
             outputStyle     : 'compact',
@@ -26,8 +24,12 @@ gulp.task('scss', function () {
             browsers: ['> 1%', 'Last 2 versions', 'IE 8'],
             cascade: false
         }))
-        .pipe(gulp.dest(path.sourcePath))
+        .pipe(gulp.dest(path.compilePath))
         .pipe(connect.reload());
+});
+
+gulp.task('watch-sass', function(){
+    gulp.watch(path.sourcePath, ['sass']);
 });
 
 // gulp.task('scss', function () {
@@ -41,9 +43,6 @@ gulp.task('scss', function () {
 //         .pipe(connect.reload());
 // });
 
-gulp.task('watchScss', function(){
-    gulp.watch(path.originPath, ['scss']);
-});
 
 // var spritesmith  = require('gulp.spritesmith');
 // var sass         = require('gulp-sass');
