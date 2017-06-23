@@ -1,5 +1,5 @@
 /*
- *   Created by Edward 10/8/2016
+ *    Created by Edward 15/6/2017
  * */
 
 var gulp = require('gulp');
@@ -25,9 +25,11 @@ requireDir('./gulptask',{ recurse: true });
 
 gulp.task('watch', ['watch-html', 'watch-sass', 'watch-scripts']);
 
+gulp.task('compile-html', ['html']);
+
 gulp.task('compile-sass', ['sass']);
 
-gulp.task('default',['connect', 'clean', 'compile-sass', 'watch']);
+gulp.task('default',['connect', 'clean', 'compile-html', 'compile-sass', 'watch']);
 
 gulp.task('connect', function() {
     connect.server({

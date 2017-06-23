@@ -1,0 +1,20 @@
+<script type="text/javascript" src="../../static/plugins/sdk.js"></script>
+<script id="analyticsScript" src="../../static/plugins/analytics.js"></script>
+<script type="text/javascript">
+    // 字体控制
+    function setFontsize() {
+        document.querySelector('html').style.fontSize = (window.screen.width / 375 * 10 + 'px');
+    }
+    setFontsize();
+    window.onresize = function() {
+        setFontsize();
+    }
+    window._caProtocol = (("http:" == document.location.protocol) ? " http://" : " https://");
+    document.write(decodeURIComponent("%3Cscript src='" + _caProtocol + "data.chexiang.com/js/ca.min.js?t=" + new Date().getTime() + "&type=' type='text/javascript'%3E" + "%3C/script%3E"));
+</script>
+<script type="text/javascript" src="../../static/plugins/zepto.min.js"></script>
+<script type="text/javascript" src="../../static/plugins/url.min.js"></script>
+<script type="text/javascript" src="../../static/plugins/jweixin.js"></script>
+<script type="text/javascript" src="../../static/plugins/sm/sm.min.js"></script>
+<script type="text/javascript" src="../../static/scripts/common.js"></script>
+<script type="text/javascript" src="../../static/scripts/@@gulpHdName/index.js"></script>

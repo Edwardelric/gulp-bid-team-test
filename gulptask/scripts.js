@@ -1,37 +1,35 @@
-// /*
-// *   Created by Edward 10/8/2016
-// * */
-//
+/*
+ *    Created by Edward 23/6/2017
+ * */
 
 var gulp   = require('gulp');
 var eslint = require('gulp-eslint');
 var uglify = require('gulp-uglify');
 var connect      = require('gulp-connect');
+var config  = require('../config');
 var rev    = require('gulp-rev');
 
 var path = {
-    'sourcePath': './static/scripts/**/*.js',
+    'sourcePath': './static/scripts/'+config.globalHdName+'/*.js',
     'distPath': './dist/static/scripts/'
 };
+
+gulp.task('eslint',function(){
+   return gulp.src(path.sourcePath)
+       .pipe(eslint({configFle:"./.eslintrc"}))
+       .pipe(eslint.format())
+       .pipe(eslint.failOnError())
+});
+
+gulp.task('watch-scripts', function(){
+    gulp.watch(path.sourcePath, ['eslint']);
+});
 
 gulp.task('scripts',function(){
     gulp.src(path.sourcePath)
         .pipe(uglify())
         .pipe(gulp.dest(path.distPath));
 });
-
-gulp.task('eslint',function(){
-   return gulp.src(path.sourcePath)
-       .pipe(eslint({configFle:"./.eslintrc"}))
-       .pipe(eslint.format())
-       .pipe(eslint.failOnError());
-});
-
-
-gulp.task('watch-scripts', function(){
-    gulp.watch(path.sourcePath, ['eslint']);
-});
-
 
 //
 // gulp.task('components',function(){

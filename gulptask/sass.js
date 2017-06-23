@@ -1,5 +1,5 @@
 /*
- *   Created by Edward 15/6/2017
+ *    Created by Edward 15/6/2017
  * */
 
 var gulp         = require('gulp');
@@ -25,7 +25,6 @@ gulp.task('sass', function () {
             cascade: false
         }))
         .pipe(gulp.dest(path.compilePath))
-        .pipe(connect.reload());
 });
 
 gulp.task('watch-sass', function(){

@@ -11,6 +11,7 @@
 /dist
 /bower_components
 /static/styles/
+/view/hd_*_temp/
 /src/main/resources/generatorConfig.xml
 node_modules
 

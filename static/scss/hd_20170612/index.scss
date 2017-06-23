@@ -1,0 +1,199 @@
+body {
+  background: #fff;
+}
+.wrapper {
+  padding-bottom: 2.25rem;
+  .bg-1 {
+    height: 4.25rem;
+    background: transparent url(../../images/hd_20170612/img-1.jpg) top center  no-repeat;
+    background-size: contain;
+  }
+  .video-wrapper {
+    overflow: hidden;
+    height: 17.5rem;
+    margin: 0 1rem 1rem 1rem;
+    text-align: center;
+    video {
+      object-fit: fill;
+      width: 100%;
+      background: #000;
+    }
+  }
+  .service-list {
+    height: 8.35rem;
+    padding-top: 1rem;
+    margin: 0 1rem;
+    margin-bottom: 0.25rem;
+    font-size: 1.2rem;
+    &:nth-of-type(1) {
+      background: #f5f5f5 url(../../images/hd_20170612/img-2.jpg) bottom right no-repeat;
+      background-size: 55%
+    }
+    &:nth-of-type(2) {
+      background: #f5f5f5 url(../../images/hd_20170612/img-3.jpg) bottom right no-repeat;
+      background-size: 55%
+    }
+    &:nth-of-type(3) {
+      background: #f5f5f5 url(../../images/hd_20170612/img-4.jpg) bottom right no-repeat;
+      background-size: 55%
+    }
+    dt {
+      display: inline-block;
+      height: 2.3rem;
+      padding:0 1rem;
+      background: #ff0000;
+      border-top-right-radius: 1.15rem;
+      border-bottom-right-radius: 1.15rem;
+      line-height: 2.3rem;
+      color: #fff;
+    }
+    dd:nth-of-type(1){
+      padding:0.9rem 0 0.2rem 1rem;
+      color: #333333;
+    }
+    dd:nth-of-type(2) {
+      padding-left: 1rem;
+      color: #04b1ff;
+      font-size: 1.4rem;
+    }
+  }
+  .bg-2 {
+    height: 2.35rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    background: transparent url(../../images/hd_20170612/img-5.jpg) top center no-repeat;
+    background-size: contain;
+  }
+  .bg-3 {
+    margin: 0 1rem;
+    padding:1.5rem 0;
+    background: #f5f5f5;
+    form {
+      div {
+        position: relative;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0 1rem 1rem 1rem;
+        padding: 0.6rem 0 0.6rem 0.8rem;
+        border: 1px solid #ccc;
+        border-radius: 0.6rem;
+        background-color: #fff;
+        &.right-status {
+          border: 1px solid #03a9f4;
+          i {
+            display: none;
+          }
+        }
+        &.error-status {
+          border: 1px solid #e51b23;
+        }
+        i {
+          color: #ff0000;
+          text-align: center;
+          font-style: normal;
+        }
+        input {
+          flex: 0.9 0 0;
+          height: 2.6rem;
+          color: #999999;
+          font-size: 1.2rem;
+        }
+        select {
+          flex: 1 0 0;
+          height: 2.6rem;
+          border: 0;
+          background: none;
+          color: #999999;
+          font-size: 1.2rem;
+        }
+      }
+    }
+    .submit-btn {
+      height: 4rem;
+      margin:0 1rem;
+      margin-top: 0.5rem;
+      border: 0;
+      border-radius: 0.6rem;
+      background: #af2229;
+      color: #fff;
+      font-size: 1.7rem;
+      line-height:4rem;
+      text-align: center;
+    }
+  }
+  .bg-4 {
+    height: 2rem;
+    margin: 3rem 0 1.2rem 0;
+    background: transparent url(../../images/hd_20170612/img-6.jpg) top center  no-repeat;
+    background-size: contain;
+  }
+  .rules{
+    margin: 0 1rem;
+    padding: 0.7rem 1rem 1.5rem 1rem;
+    background: #f5f5f5;
+    li {
+      display: flex;
+      flew-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      font-size: 1.2rem;
+      line-height: 2.5rem;
+      span {
+        color: #333333;
+        white-space: nowrap;
+      }
+      p {
+        color: #666666;
+      }
+      strong {
+        color: #fe0000;
+      }
+    }
+  }
+  .share {
+    position: fixed;
+    right: 1rem;
+    bottom: 17.4rem;
+    z-index: 1000;
+    width: 5.1rem;
+    height: 5.1rem;
+    background: transparent url(../../../img/20170605hd/index/share.png) center center no-repeat;
+    background-size: 5.1rem 5.1rem;
+  }
+  .backtop {
+    position: fixed ;
+    right: 1rem;
+    bottom: 8.4rem;
+    width: 5.2rem;
+    height: 5.2rem;
+    background: transparent url(../../../img/20170605hd/index/backtop.png) center center no-repeat;
+    background-size: 5.1rem 5.1rem;
+  }
+}
+.toast {
+  position: fixed;
+  height: 2.5rem;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+}
+.picker-modal {
+  .toolbar-inner {
+    justify-content: center;
+    align-items: center;
+    .picker-calendar-year-picker {
+      display: none;
+    }
+  }
+  .picker-calendar-week-days {
+    height: 3rem;
+    align-items: center;
+  }
+  .picker-calendar-day-disabled {
+    background-color: #f4f4f4;
+  }
+  .picker-calendar-day.picker-calendar-day-today span {
+    background: none;
+  }
+}
