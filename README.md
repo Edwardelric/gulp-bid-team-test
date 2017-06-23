@@ -1,4 +1,4 @@
-# gulp + vue2.0 开发活动页
+# gulp + zepto 开发活动页
 
 ## 技术栈
   * gulp
@@ -60,13 +60,13 @@
     │   └── scripts.js                              // scripts编译和压缩
     ├── static                                          
     │   ├── images                                  // 图片资源
-    │   │   ├── common                             // 公用的图片                        
+    │   │   ├── common                              // 公用的图片                        
     │   │   │   ├── backtop.png 
     │   │   │   ├── download-icon-btn.png
     │   │   │   ├── download-icon-chexiang.png
     │   │   │   ├── download-icon-close.png
     │   │   │   └── share.png
-    │   │   ├── hd_20170612                        // 当前开发活动的图片
+    │   │   ├── hd_20170612                         // 当前开发活动的图片
     │   │   │   └── bg-0.png
     │   ├── plugins                                 // 常用固定不变的组件
     │   │   ├── sm                                  
@@ -78,29 +78,29 @@
     │   │   ├── url.js
     │   │   └── zepto.min.js
     │   ├── scripts                                 
-    │   │   ├── hd_20170612                        // 当前开发活动的脚本
+    │   │   ├── hd_20170612                          // 当前开发活动的脚本
     │   │   │   └── index.js                        
-    │   │   └── common.js                          // 公用脚本
+    │   │   └── common.js                            // 公用脚本
     │   ├── scss
     │   │   ├── base
-    │   │   │   └── _reset.scss                   // reset样式  
+    │   │   │   └── _reset.scss                     // reset样式  
     │   │   ├── common                                           
-    │   │   │   └── _common.scss                  // 公用的样式
+    │   │   │   └── _common.scss                    // 公用的样式
     │   │   ├── hd_20170612                                      
-    │   │   │   └── index.scss                    // 当前活动的样式                           
+    │   │   │   └── index.scss                      // 当前活动的样式                           
     │   │   ├── helpers                                               
-    │   │   │   └── _mixins.scss                  // mixins                      
-    │   │   └── main.scss                         // main 
+    │   │   │   └── _mixins.scss                    // mixins                      
+    │   │   └── main.scss                           // main 
     ├── view
     │   ├── hd_20170612                             
-    │   │   │   └── index.html                    // 当前开发活动的中间内容页
+    │   │   │   └── index.html                      // 当前开发活动的中间内容页
     │   ├── hd_20170612_temp                       
-    │   │   │   └── index.html                    // 动态生成的有link 和script 和分享的完整页
+    │   │   │   └── index.html                      // 动态生成的有link 和script 和分享的完整页
     │   ├── layout                                  
-    │   │   │   ├── index.html                    // 统一套用的模板页面
-    │   │   │   ├── links.html                    // 样式link页面  
-    │   │   │   ├── scripts.html                  // 脚本script页面
-    │   │   │   └── tools.html                    // 分享，返回顶部，下载app工具栏   
+    │   │   │   ├── index.html                      // 统一套用的模板页面
+    │   │   │   ├── links.html                      // 样式link页面  
+    │   │   │   ├── scripts.html                    // 脚本script页面
+    │   │   │   └── tools.html                      // 分享，返回顶部，下载app工具栏   
     .
     ```
 
