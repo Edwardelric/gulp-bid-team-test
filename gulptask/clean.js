@@ -7,11 +7,12 @@ var del  = require('del');
 
 var path = {
     'sourcePath': './static/styles',
-    'distPath': './dist'
+    'compileHtml': './view_temp/',
+    'distPath': './dist/'
 };
 
 gulp.task('clean',function(){
-    del.sync([path.sourcePath]);
+    del.sync([path.compileHtml, path.sourcePath]);
 });
 
 gulp.task('clean-build',function(){

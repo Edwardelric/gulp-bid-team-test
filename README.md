@@ -19,7 +19,11 @@
   * git clone
   * npm install
   * gulp 【启动项目】
+  * gulp 命令自动生成的文件
+     * static/styles 【编译后的css文件】
+     * view_temp/活动名称   【编译后的html文件】
   * gulp build 【打包项目】
+     * 生成dist文件
 
 ## 开发前准备
   * 唯一需要开发者手动修改的文件：config/index.js

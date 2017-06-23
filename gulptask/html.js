@@ -12,7 +12,8 @@ var revCollector = require('gulp-rev-collector');
 var path = {
     'layoutPath': './view/layout/index.html',
     'sourcePath': './view/**/*.html',
-    'compilePath': './view/'+config.globalHdName+'_temp/**/*.html',
+    'compilePath': './view_temp/'+config.globalHdName+'/',
+    'compileDistPath': './view_temp/'+config.globalHdName+'/**/*.html',
     'distPath': './dist/view/'+config.globalHdName
 };
 
@@ -26,12 +27,12 @@ gulp.task('html', function () {
                 gulpTitle: config.globalTitle
             }
         }))
-        .pipe(gulp.dest('./view/'+config.globalHdName+'_temp/'))
+        .pipe(gulp.dest(path.compilePath))
         .pipe(connect.reload());
 });
 
 gulp.task('build-html', function() {
-    gulp.src([path.compilePath])
+    gulp.src([path.compileDistPath])
         .pipe(gulp.dest(path.distPath));
 });
 
