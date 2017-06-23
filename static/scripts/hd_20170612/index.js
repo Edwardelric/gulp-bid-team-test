@@ -14,7 +14,6 @@ $(function(){
     }
     function bb(){
         a = Math.random();
-        document.title = a;
     }
     for(var j=0;j<20;j++){
         a = bb();

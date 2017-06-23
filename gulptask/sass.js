@@ -10,7 +10,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var path = {
     'sourcePath': './static/scss/**/*.scss',
     'compilePath': './static/styles/',
-    'distPath': './dist/static/scss/'
+    'distPath': './dist/static/css/'
 };
 
 gulp.task('sass', function () {
@@ -25,6 +25,21 @@ gulp.task('sass', function () {
             cascade: false
         }))
         .pipe(gulp.dest(path.compilePath))
+        .pipe(connect.reload());
+});
+
+gulp.task('build-sass', function(){
+    gulp.src(path.sourcePath)
+        .pipe(sass({
+            precision       : 10,
+            outputStyle     : 'compressed',
+            errLogToConsole : true
+        }).on('error', sass.logError))
+        .pipe(autoprefixer({
+            browsers: ['> 1%', 'Last 2 versions', 'IE 8'],
+            cascade: false
+        }))
+        .pipe(gulp.dest(path.distPath));
 });
 
 gulp.task('watch-sass', function(){

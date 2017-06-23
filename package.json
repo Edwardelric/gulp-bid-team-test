@@ -17,15 +17,12 @@
     "gulp-connect-proxy": "^0.3.1",
     "gulp-eslint": "^3.0.1",
     "gulp-file-include": "^1.1.0",
+    "gulp-imagemin": "^3.3.0",
     "gulp-rev": "^7.1.2",
     "gulp-rev-collector": "^1.0.5",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^2.0.0",
-    "gulp.spritesmith": "^6.2.1",
-    "imagemin-cli": "^3.0.0",
     "node-sass": "^3.10.1",
-    "postcss-cli": "^2.6.0",
-    "require-dir": "^0.3.1",
-    "uglify-js": "^2.7.3"
+    "require-dir": "^0.3.1"
   }
 }

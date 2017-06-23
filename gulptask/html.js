@@ -12,7 +12,8 @@ var revCollector = require('gulp-rev-collector');
 var path = {
     'layoutPath': './view/layout/index.html',
     'sourcePath': './view/**/*.html',
-    'distPath': './dist/view/'
+    'compilePath': './view/'+config.globalHdName+'_temp/**/*.html',
+    'distPath': './dist/view/'+config.globalHdName
 };
 
 gulp.task('html', function () {
@@ -28,6 +29,12 @@ gulp.task('html', function () {
         .pipe(gulp.dest('./view/'+config.globalHdName+'_temp/'))
         .pipe(connect.reload());
 });
+
+gulp.task('build-html', function() {
+    gulp.src([path.compilePath])
+        .pipe(gulp.dest(path.distPath));
+});
+
 gulp.task('watch-html', function(){
     gulp.watch(path.sourcePath, ['html']);
 });
