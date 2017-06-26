@@ -1,5 +1,5 @@
 {
-  "name": "src-web",
+  "name": "gulp-project",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -10,19 +10,19 @@
     "gulp": "^3.9.1"
   },
   "devDependencies": {
-    "autoprefixer": "^6.5.1",
     "del": "^2.2.2",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-connect": "^5.0.0",
-    "gulp-connect-proxy": "^0.3.1",
     "gulp-eslint": "^3.0.1",
     "gulp-file-include": "^1.1.0",
     "gulp-imagemin": "^3.3.0",
-    "gulp-rev": "^7.1.2",
-    "gulp-rev-collector": "^1.0.5",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace-task": "^0.11.0",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^2.0.0",
+    "http-proxy-middleware": "^0.17.4",
     "node-sass": "^3.10.1",
-    "require-dir": "^0.3.1"
+    "require-dir": "^0.3.1",
+    "uuid": "^3.1.0"
   }
 }

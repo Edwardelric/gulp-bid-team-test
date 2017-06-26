@@ -74,13 +74,13 @@
     │   │   │   └── bg-0.png
     │   ├── plugins                                 // 常用固定不变的组件
     │   │   ├── sm                                  
-    │   │   │   ├── sm.min.css
-    │   │   │   └── sm.min.js
+    │   │   │   ├── sm.css
+    │   │   │   └── sm.js
     │   │   ├── analytics.js
     │   │   ├── jweixin.js
     │   │   ├── sdk.js
     │   │   ├── url.js
-    │   │   └── zepto.min.js
+    │   │   └── zepto.js
     │   ├── scripts                                 
     │   │   ├── hd_20170612                          // 当前开发活动的脚本
     │   │   │   └── index.js                        

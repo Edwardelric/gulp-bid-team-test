@@ -7,7 +7,7 @@ var connect  = require('gulp-connect');
 var imagemin = require('gulp-imagemin');
 
 var path = {
-    'sourcePath': './static/images/**/*.jpg',
+    'sourcePath': './static/images/**/*',
     'distPath': './dist/static/images/'
 };
 

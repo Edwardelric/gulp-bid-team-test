@@ -6,11 +6,13 @@ var gulp         = require('gulp');
 var connect      = require('gulp-connect');
 var sass         = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
+var rename       = require("gulp-rename");
 
 var path = {
     'sourcePath': './static/scss/**/*.scss',
     'compilePath': './static/styles/',
-    'distPath': './dist/static/css/'
+    'compiledPath': './static/styles/**/*.css',
+    'distPath': './dist/static/styles/'
 };
 
 gulp.task('sass', function () {
@@ -29,7 +31,7 @@ gulp.task('sass', function () {
 });
 
 gulp.task('build-sass', function(){
-    gulp.src(path.sourcePath)
+    gulp.src(path.compiledPath)
         .pipe(sass({
             precision       : 10,
             outputStyle     : 'compressed',
@@ -38,6 +40,10 @@ gulp.task('build-sass', function(){
         .pipe(autoprefixer({
             browsers: ['> 1%', 'Last 2 versions', 'IE 8'],
             cascade: false
+        }))
+        .pipe(rename({
+            suffix: '.min',
+            extname: '.css'
         }))
         .pipe(gulp.dest(path.distPath));
 });

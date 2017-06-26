@@ -6,13 +6,13 @@ var gulp    = require('gulp');
 var eslint  = require('gulp-eslint');
 var uglify  = require('gulp-uglify');
 var connect = require('gulp-connect');
-var config = require('../config');
-var rev     = require('gulp-rev');
+var rename  = require("gulp-rename");
 
 var path = {
     'sourcePath': './static/scripts/**/*.js',
     'distPath': './dist/static/scripts/',
-    'pluginsPath': './static/plugins/**/*',
+    'pluginsPathScripts': './static/plugins/**/*.js',
+    'pluginsPathCss': './static/plugins/**/*.css',
     'distPluginsPath': './dist/static/plugins/'
 };
 
@@ -26,8 +26,21 @@ gulp.task('eslint',function(){
 gulp.task('build-scripts',function(){
     gulp.src(path.sourcePath)
         .pipe(uglify())
+        .pipe(rename({
+            suffix: '.min'
+        }))
         .pipe(gulp.dest(path.distPath));
-    gulp.src(path.pluginsPath)
+    gulp.src(path.pluginsPathScripts)
+        .pipe(rename({
+            suffix: '.min',
+            extname: '.js'
+        }))
+        .pipe(gulp.dest(path.distPluginsPath));
+    gulp.src(path.pluginsPathCss)
+        .pipe(rename({
+            suffix: '.min',
+            extname: '.css'
+        }))
         .pipe(gulp.dest(path.distPluginsPath));
 });
 

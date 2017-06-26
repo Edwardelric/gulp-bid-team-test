@@ -2,12 +2,13 @@
  *    Created by Edward 15/6/2017
 * */
 
-var gulp = require('gulp');
-var del  = require('del');
+var gulp   = require('gulp');
+var del    = require('del');
+var config = require('../config');
 
 var path = {
     'sourcePath': './static/styles',
-    'compileHtml': './view_temp/',
+    'compileHtml': './view_temp/' + config.globalHdName,
     'distPath': './dist/'
 };
 

@@ -2,13 +2,14 @@
  *    Created by Edward 15/6/2017
  * */
 
-var gulp = require('gulp');
+var gulp       = require('gulp');
 var requireDir = require('require-dir');
-var connect = require('gulp-connect');
+var connect    = require('gulp-connect');
+var proxy      = require('http-proxy-middleware');
 
 requireDir('./gulptask',{ recurse: true });
 
-gulp.task('watch', ['watch-html', 'watch-sass', 'watch-scripts']);
+gulp.task('watch', ['watch-html', 'watch-sass']);
 
 gulp.task('compile-html', ['html']);
 
@@ -21,6 +22,14 @@ gulp.task('build', ['clean-build', 'build-html', 'build-sass', 'build-scripts', 
 gulp.task('connect', function() {
     connect.server({
         port: 8888,
-        livereload: true
+        livereload: true,
+        middleware: function(connect, opt) {
+            return [
+                proxy('/cxb',  {
+                    target: 'http://h.jia.chexiangpre.com',
+                    changeOrigin:true
+                })
+            ]
+        }
     });
 });
