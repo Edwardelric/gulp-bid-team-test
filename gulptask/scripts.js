@@ -45,5 +45,9 @@ gulp.task('build-scripts',function(){
 });
 
 gulp.task('watch-scripts', function(){
-    gulp.watch(path.sourcePath, ['eslint']);
+    // gulp.watch(path.sourcePath, ['eslint']);
+    gulp.watch(path.sourcePath, function(){
+        gulp.src(path.sourcePath)
+            .pipe(connect.reload());
+    })
 });

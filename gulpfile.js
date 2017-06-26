@@ -9,7 +9,7 @@ var proxy      = require('http-proxy-middleware');
 
 requireDir('./gulptask',{ recurse: true });
 
-gulp.task('watch', ['watch-html', 'watch-sass']);
+gulp.task('watch', ['watch-html', 'watch-sass', 'watch-scripts']);
 
 gulp.task('compile-html', ['html']);
 
