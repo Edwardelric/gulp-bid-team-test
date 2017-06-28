@@ -8,7 +8,7 @@ var config = require('../config');
 
 var path = {
     'sourcePath': './static/styles',
-    'compileHtml': './view_temp/' + config.globalHdName,
+    'compileHtml': './view_temp/' + config.gulpHdName,
     'distPath': './dist/'
 };
 
@@ -16,6 +16,6 @@ gulp.task('clean',function(){
     del.sync([path.compileHtml, path.sourcePath]);
 });
 
-gulp.task('clean-build',function(){
+gulp.task('build-clean',function(){
     del.sync([path.distPath]);
 });

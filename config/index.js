@@ -3,6 +3,9 @@
  * */
 
 module.exports =  {
-    globalHdName: 'hd_20170613',  // 活动名称
-    globalTitle: '活动标题'       // 活动标题
+    gulpHdName: 'hd_20170613',        // 活动名称
+    gulpTitle: {                       // 活动标题
+        'index':  '活动标题edward',     //  key 名称就是新建的页面名称  index => index.html
+        'detail': '活动详情'            //  key 名称就是新建的页面名称  detail => detail.html
+    }
 };

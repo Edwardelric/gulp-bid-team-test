@@ -1,18 +1,9 @@
 $(function(){
-    $.ajaxSettings.beforeSend = function(xhr, request) {
-        console.log(request);
-    }
-    $.ajaxSettings.error = function(xhr, errorType, error) {
-        console.log(errorType, error);
-    }
-    $.ajaxSettings.complete = function(xhr, status) {
-        console.log('status',status)
-        $.toast('1231');
-    }
-    $.ajaxSettings.success = function(data, status, xhr) {
-        console.log('success2');
-    }
 
+    var queryObj = url('?');
+    if (queryObj && queryObj.isappinstalled == 0) {
+        queryObj.userInfo = '';
+    }
     var shareObj = {
         friend: {
             title: "免费DIY服务体验，重庆车主专享！",
@@ -28,11 +19,11 @@ $(function(){
     }
     commonObj.initWxShare($,"",shareObj);
 
-    // $.ajax({
-    //     type: 'GET',
-    //     url: '/cxb/hd/index.shtml',
-    //     success: function(data) {
-    //         console.log('success1');
-    //     }
-    // })
+    $.ajax({
+        type: 'GET',
+        url: '/cxb/hd/index.shtml',
+        success: function(data) {
+            console.log('success1');
+        }
+    })
 });
