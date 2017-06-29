@@ -5,7 +5,7 @@ body {
   padding-bottom: 2.25rem;
   .bg-1 {
     height: 4.25rem;
-    background: transparent url(../../images/hd_20170612/img-1.jpg) top center  no-repeat;
+    background: transparent url(../../images/20170629hd/img-1.jpg) top center  no-repeat;
     background-size: contain;
   }
   .video-wrapper {
@@ -26,15 +26,15 @@ body {
     margin-bottom: 0.25rem;
     font-size: 1.2rem;
     &:nth-of-type(1) {
-      background: #f5f5f5 url(../../images/hd_20170612/img-2.jpg) bottom right no-repeat;
+      background: #f5f5f5 url(../../images/20170629hd/img-2.jpg) bottom right no-repeat;
       background-size: 55%
     }
     &:nth-of-type(2) {
-      background: #f5f5f5 url(../../images/hd_20170612/img-3.jpg) bottom right no-repeat;
+      background: #f5f5f5 url(../../images/20170629hd/img-3.jpg) bottom right no-repeat;
       background-size: 55%
     }
     &:nth-of-type(3) {
-      background: #f5f5f5 url(../../images/hd_20170612/img-4.jpg) bottom right no-repeat;
+      background: #f5f5f5 url(../../images/20170629hd/img-4.jpg) bottom right no-repeat;
       background-size: 55%
     }
     dt {
@@ -61,7 +61,7 @@ body {
     height: 2.35rem;
     margin-top: 3rem;
     margin-bottom: 1rem;
-    background: transparent url(../../images/hd_20170612/img-5.jpg) top center no-repeat;
+    background: transparent url(../../images/20170629hd/img-5.jpg) top center no-repeat;
     background-size: contain;
   }
   .bg-3 {
@@ -126,7 +126,7 @@ body {
   .bg-4 {
     height: 2rem;
     margin: 3rem 0 1.2rem 0;
-    background: transparent url(../../images/hd_20170612/img-6.jpg) top center  no-repeat;
+    background: transparent url(../../images/20170629hd/img-6.jpg) top center  no-repeat;
     background-size: contain;
   }
   .rules{
@@ -151,25 +151,6 @@ body {
         color: #fe0000;
       }
     }
-  }
-  .share {
-    position: fixed;
-    right: 1rem;
-    bottom: 17.4rem;
-    z-index: 1000;
-    width: 5.1rem;
-    height: 5.1rem;
-    background: transparent url(../../../img/20170605hd/index/share.png) center center no-repeat;
-    background-size: 5.1rem 5.1rem;
-  }
-  .backtop {
-    position: fixed ;
-    right: 1rem;
-    bottom: 8.4rem;
-    width: 5.2rem;
-    height: 5.2rem;
-    background: transparent url(../../../img/20170605hd/index/backtop.png) center center no-repeat;
-    background-size: 5.1rem 5.1rem;
   }
 }
 .toast {
@@ -198,6 +179,7 @@ body {
   }
 }
 .mask {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -209,6 +191,7 @@ body {
   transition: opacity 0.4s;
 }
 .modal-wrapper {
+  display: none;
   position: fixed;
   z-index: 999;
   top: 50%;

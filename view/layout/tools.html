@@ -1,6 +1,6 @@
-<div class="backtop" id="backTop"></div>
-<div class="share" id="share"></div>
-<div class="download" id="downLoad">
+<div class="backtop" v-if="showBackTopFlag" @click="backTop"></div>
+<div class="share" v-if="showShareFlag" @click="share"></div>
+<div class="download" v-if="showDownloadFlag">
     <div class="close" ca="车享家体验馆_车享家体验馆$关闭"></div>
     <div class="content">
         <div class="text1">下载车享家APP</div>

@@ -34,103 +34,91 @@ var commonObj = {
             wxdomain = "//wx.chexiang.com";
         }
         var initSignUrl = wxdomain + '/wxoauth2/s/getShareArgs.htm?url='+dateParam;
-        //e.$http.jsonp(initSignUrl).then(function(d){
-        e.ajax({
-            type: 'get',
-            url: initSignUrl,
-            dataType: 'jsonp',
-            success: function(data, textStatus, jqXHR) {;
-                wx.config({
-                    debug: false, // 开启调试模式
-                    appId: data.appId, // 必填，公众号的唯一标识
-                    timestamp: data.timestamp, // 必填，生成签名的时间戳
-                    nonceStr: data.nonceStr, // 必填，生成签名的随机串
-                    signature: data.signature,// 必填，签名，见附录1
-                    jsApiList: [
-                        'checkJsApi',
-                        'onMenuShareTimeline',
-                        'hideOptionMenu',
-                        'onMenuShareAppMessage'
-                    ]
-                });
+        e.$http.jsonp(initSignUrl).then(function(d){
+            var data = d.data;
+            wx.config({
+                debug: false, // 开启调试模式
+                appId: data.appId, // 必填，公众号的唯一标识
+                timestamp: data.timestamp, // 必填，生成签名的时间戳
+                nonceStr: data.nonceStr, // 必填，生成签名的随机串
+                signature: data.signature,// 必填，签名，见附录1
+                jsApiList: [
+                    'checkJsApi',
+                    'onMenuShareTimeline',
+                    'hideOptionMenu',
+                    'onMenuShareAppMessage'
+                ]
+            });
 
-                wx.ready(function () {
-                    //分享给朋友
-                    wx.onMenuShareAppMessage({
-                        title : shareObj.friend.title, // 分享标题
-                        desc : shareObj.friend.desc, // 分享描述
-                        link : shareObj.friend.link, // 分享链接
-                        imgUrl : shareObj.friend.imgUrl, // 分享图标
-                        type : '', // 分享类型,music、video或link，不填默认为link
-                        dataUrl : '', // 如果type是music或video，则要提供数据链接，默认为空
-                        success : function () {
-                            $.toast('分享成功');
-                        },
-                        cancel : function () {
-                            $.toast('取消分享');
-                        },
-                        fail : function (res) {
-                            $.toast('取消失败');
-                        }
-                    });
-                    //分享到朋友圈
-                    wx.onMenuShareTimeline({
-                        title : shareObj.friendQuan.title, // 分享标题
-                        link : shareObj.friendQuan.link, // 分享链接
-                        imgUrl : shareObj.friendQuan.imgUrl, // 分享图标
-                        success : function () {
-                            $.toast('分享成功');
-                        },
-                        cancel : function () {
-                            $.toast('取消分享');
-                        },
-                        fail : function (res) {
-                            $.toast('取消失败');
-                        }
-                    });
-                });
+            wx.ready(function () {
+                //分享给朋友
+                wx.onMenuShareAppMessage({
+                    title : shareObj.friend.title, // 分享标题
+                    desc : shareObj.friend.desc, // 分享描述
+                    link : shareObj.friend.link, // 分享链接
+                    imgUrl : shareObj.friend.imgUrl, // 分享图标
+                    type : '', // 分享类型,music、video或link，不填默认为link
+                    dataUrl : '', // 如果type是music或video，则要提供数据链接，默认为空
+                    trigger : function (res) {
 
-                wx.error(function (type, res) {});
+                    },
+                    success : function () {
 
-                //防止首页不能进行分享
-                function onBridgeReady() {
-                    wx.showOptionMenu();
-                }
-                if (typeof WeixinJSBridge == "undefined") {
-                    if (document.addEventListener) {
-                        document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
-                    } else if (document.attachEvent) {
-                        document.attachEvent('WeixinJSBridgeReady', onBridgeReady);
-                        document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
+                    },
+                    cancel : function () {
+                        // 用户取消分享后执行的回调函数
+                        Vue.$toast("取消分享");
+                    },
+                    fail : function (res) {
+                        Vue.$toast("取消失败");
+
                     }
-                } else {
-                    onBridgeReady();
-                }
-                wx.showMenuItems({
-                    menuList : ['menuItem:share:appMessage', 'menuItem:share:timeline']
                 });
-            }
-         })
-    },
-    zeptoExtend: function() {
-        var errorMsg = {
-            '401': '请登录',
-            '403': '您没有权限访问该网页',
-            '404': '您访问的页面不存在',
-            '405': '请求方法错误',
-            '500': '服务器异常'
-        }
-        $.ajaxSettings.error = function(xhr, errorType, error) {
-            if (xhr.status) {
-                $.toast(errorMsg[xhr.status]);
-            } else {
-                $.toast('请求错误');
-            }
+                //分享到朋友圈
+                wx.onMenuShareTimeline({
+                    title : shareObj.friendQuan.title, // 分享标题
+                    link : shareObj.friendQuan.link, // 分享链接
+                    imgUrl : shareObj.friendQuan.imgUrl, // 分享图标
+                    trigger : function (res) {
+                        console.log("trigger");
+                    },
+                    success : function () {
 
-        }
-        $.ajaxSettings.success = function(data, status, xhr) {
-            $.toast('操作成功');
-        }
+                    },
+                    cancel : function () {
+                        // 用户取消分享后执行的回调函数
+                        Vue.$toast("取消分享");
+                    },
+                    fail : function (res) {
+                        Vue.$toast("分享失败");
+                    }
+                });
+            });
+
+            wx.error(function (type, res) {
+
+            });
+
+            //防止首页不能进行分享
+            function onBridgeReady() {
+                wx.showOptionMenu();
+            }
+            if (typeof WeixinJSBridge == "undefined") {
+                if (document.addEventListener) {
+                    document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+                } else if (document.attachEvent) {
+                    document.attachEvent('WeixinJSBridgeReady', onBridgeReady);
+                    document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
+                }
+            } else {
+                onBridgeReady();
+            }
+            wx.showMenuItems({
+                menuList : ['menuItem:share:appMessage', 'menuItem:share:timeline']
+            });
+        })
+    },
+    scrollToExtend: function() {
         $.fn.scrollTo = function (options) {
             var defaults = {
                 toT: 0,    //滚动目标位置
@@ -164,46 +152,5 @@ var commonObj = {
             }, opts.delay);
             return _this;
         };
-    },
-    showShare: function() {
-        if (this.isApp()) {
-            $('#share').show();
-        } else {
-            $('#share').hide();
-        }
-    },
-    showBottomBar: function(flag){
-        if (flag) {
-            $('#downLoad').show();
-        } else {
-            $('#downLoad').hide();
-        }
-    },
-    bindScroll: function() {
-        var _this = this;
-        var winHeight = window.innerHeight;
-        window.addEventListener("scroll", function () {
-            var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
-            if (scrollTop > winHeight) {
-                $('#backTop').show();
-            }else {
-                $('#backTop').hide();
-            }
-        });
-        this.backToTop();
-    },
-    backToTop: function() {
-        $('#backTop').on('click', function() {
-            $("body").scrollTo({toT: 0});
-        });
-    },
-    init: function() {
-        this.zeptoExtend();
-        this.showShare();
-        this.bindScroll();
     }
-}
-$(function(){
-    console.log($);
-    commonObj.init();
-});
+};

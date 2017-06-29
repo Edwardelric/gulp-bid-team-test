@@ -3,7 +3,6 @@
  * */
 
 var gulp     = require('gulp');
-var connect  = require('gulp-connect');
 var imagemin = require('gulp-imagemin');
 
 var path = {

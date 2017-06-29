@@ -1,9 +1,9 @@
-# gulp + zepto 开发活动页
+# gulp + zepto + sui开发活动页
 
 ## 技术栈
   * gulp
   * scss
-  * sui 
+  * sui(http://m.sui.taobao.org/) 
   * zepto
 
 ## 运行环境
@@ -29,12 +29,17 @@
   * 唯一需要开发者手动修改的文件：config/index.js
   * <pre>
         module.exports =  {
-             globalHdName: 'hd_20170612',   // 活动名称
-             globalTitle: '活动标题'        // 活动标题
-         };
+            gulpHdName: '20170629hd',              // 活动名称
+            gulpCategory: {
+                'index':  '测试首页内容',          //  index 是页面的名称， 活动标题 是 idnex.html 的title, value是标题
+                'detail': '测试详情内容',          //  key 名称就是新建的页面名称  detail => detail.html
+                'list': '测试列表内容'             //  list 名称就是新建的页面名称  list => list.html
+            }
+        };
      </pre> 
   * 开发者clone项目后 请不要提交 修改的config文件 
-  * 其他scss 和 js 按照各自需求创建，但名称必须和globalHdName一致
+  * 其他scss 和 js 按照各自需求创建，但名称必须和gulpHdName一致
+  * gulpfile.js 里 browser-sync task middleware中间键里面可以配置proxy地址
      
 ## 统一规范 
   * 文件名称统一使用 _ 下划线的形式命名;
@@ -54,6 +59,8 @@
      
 ## 项目结构
    ```.
+    ├── config    
+    │   └── index.js                                // 活动的名称和标题配置文件
     ├── gulptask    
     │   └── index.js                                // gulp 文件入口
     ├── gulptask                                         
@@ -70,17 +77,15 @@
     │   │   │   ├── download-icon-chexiang.png
     │   │   │   ├── download-icon-close.png
     │   │   │   └── share.png
-    │   │   ├── hd_20170612                         // 当前开发活动的图片
+    │   │   ├── hd_20170629                         // 当前开发活动的图片
     │   │   │   └── bg-0.png
     │   ├── plugins                                 // 常用固定不变的组件
     │   │   ├── sm                                  
-    │   │   │   ├── sm.css
-    │   │   │   └── sm.js
-    │   │   ├── analytics.js
-    │   │   ├── jweixin.js
-    │   │   ├── sdk.js
-    │   │   ├── url.js
-    │   │   └── zepto.js
+    │   │   │   ├── sm.min.css
+    │   │   │   └── sm.min.js
+    │   │   ├── url.min.js
+    │   │   └── vue.min.js
+    │   │   └── vue-resource.min.js
     │   ├── scripts                                 
     │   │   ├── hd_20170612                          // 当前开发活动的脚本
     │   │   │   └── index.js                        

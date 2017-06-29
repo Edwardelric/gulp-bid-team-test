@@ -3,7 +3,8 @@
  * */
 
 var gulp         = require('gulp');
-var connect      = require('gulp-connect');
+var browserSync  = require('browser-sync');
+var reload       = browserSync.reload;
 var sass         = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var rename       = require("gulp-rename");
@@ -27,7 +28,7 @@ gulp.task('sass', function () {
             cascade: false
         }))
         .pipe(gulp.dest(path.compilePath))
-        .pipe(connect.reload());
+        .pipe(reload({stream:true}));
 });
 
 gulp.task('build-sass', function(){

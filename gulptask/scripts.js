@@ -2,11 +2,12 @@
  *    Created by Edward 23/6/2017
  * */
 
-var gulp    = require('gulp');
-var eslint  = require('gulp-eslint');
-var uglify  = require('gulp-uglify');
-var connect = require('gulp-connect');
-var rename  = require("gulp-rename");
+var gulp        = require('gulp');
+var eslint      = require('gulp-eslint');
+var uglify      = require('gulp-uglify');
+var browserSync = require('browser-sync');
+var reload      = browserSync.reload;
+var rename      = require("gulp-rename");
 
 var path = {
     'sourcePath': './static/scripts/**/*.js',
@@ -31,16 +32,8 @@ gulp.task('build-scripts',function(){
         }))
         .pipe(gulp.dest(path.distPath));
     gulp.src(path.pluginsPathScripts)
-        .pipe(rename({
-            suffix: '.min',
-            extname: '.js'
-        }))
         .pipe(gulp.dest(path.distPluginsPath));
     gulp.src(path.pluginsPathCss)
-        .pipe(rename({
-            suffix: '.min',
-            extname: '.css'
-        }))
         .pipe(gulp.dest(path.distPluginsPath));
 });
 
@@ -48,6 +41,6 @@ gulp.task('watch-scripts', function(){
     // gulp.watch(path.sourcePath, ['eslint']);
     gulp.watch(path.sourcePath, function(){
         gulp.src(path.sourcePath)
-            .pipe(connect.reload());
+            .pipe(reload({stream:true}));
     })
 });
