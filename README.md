@@ -10,11 +10,6 @@
   * node：v8.0.0
   * npm:  v5.0.0
 
-## 测试环境
-  * sit 域名：h.jia.chexiangsit.com
-  * pre 域名：h.jia.chexiangpre.com
-  * prd 域名：h.jia.chexiang.com
-
 ## 项目启动与打包
   * git clone
   * npm install
