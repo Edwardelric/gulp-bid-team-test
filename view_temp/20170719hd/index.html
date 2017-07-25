@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>购机油送机滤</title>
+<link rel="dns-prefetch" href="//h.jia.chexiang.com">
+<link href="../../static/plugins/sm/sm.min.css" rel="stylesheet">
+<link href="../../static/styles/main.css" rel="stylesheet">
+<link href="../../static/styles/20170719hd/index.css" rel="stylesheet">
+<script type="text/javascript">
+    // 字体控制
+    function setFontsize() {
+        document.querySelector('html').style.fontSize = (window.screen.width / 375 * 10 + 'px');
+    }
+    setFontsize();
+</script>
+</head>
+<body>
+<div id="myApp"  class="wrapper" v-cloak>
+    <section class="banner">
+    <img src="../../static/images/20170719hd/hdbanner.png" alt="">
+</section>
+<section class="mainup main">
+    <img src="../../static/images/20170719hd/main_02.jpg" alt="">
+</section>
+<section class="main">
+    <img src="../../static/images/20170719hd/main_03.png" alt="">
+    <a class="up-link" href="https://cxjapp.chexiang.com/cx/cxj/cxjweb/newdiscover/detail/detail.shtml?id=805115&artcolumn=art_010">中石油站点查看 ></a>
+    <a class="low-link" href="https://cxjapp.chexiang.com/cx/cxj/cxjweb/newdiscover/detail/detail.shtml?id=805123&artcolumn=art_010">车享家活动门店查看 ></a>
+</section>
+
+<section class="rules active">
+    <img src="../../static/images/20170719hd/hdrule.png" alt="">
+</section>
+
+    <div class="backtop" v-if="basicInfo.showBackTopFlag" @click="backTop"></div>
+<div class="share" v-if="basicInfo.showShareFlag" @click="share"></div>
+<ul class="download" v-if="basicInfo.showDownloadFlag">
+    <li>
+        <img src="../../static/images/common/logo.png"/>
+        <template v-if="basicInfo.showDownloadFlag && basicInfo.showDownloadTpl">
+            <div v-html="basicInfo.showDownloadTpl"></div>
+        </template>
+        <template v-if="!basicInfo.showDownloadTpl">
+            <div>
+                <p>下载车享家app，了解更多养车秘诀</p>
+            </div>
+        </template>
+    </li>
+    <li v-if="basicInfo.linkTpl" v-html="basicInfo.linkTpl"></li>
+    <li v-if="!basicInfo.linkTpl">
+        <a href="//cxb.chexiang.com/service/version/getLatestAppVersion/0?channel=cxjtyg" ca="车享家体验馆_车享家体验馆$下载">
+            立即下载
+        </a>
+    </li>
+</ul>
+</div>
+<script type="text/javascript" src="//s1.cximg.com/jssdk/1.0.0/lb.min.js?v4.0"></script>
+<script type="text/javascript" src="//res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script id="analyticsScript" src="//data.chexiang.com/js/cx_analytics.js"></script>
+<script type="text/javascript">
+    window._caProtocol = (("http:" == document.location.protocol) ? " http://" : " https://");
+    document.write(decodeURIComponent("%3Cscript src='" + _caProtocol + "data.chexiang.com/js/ca.min.js?t=" + new Date().getTime() + "&type=' type='text/javascript'%3E" + "%3C/script%3E"));
+</script>
+<script type="text/javascript" src="https://s1.cximg.com/cxlib/assets/js/zepto/zepto-1.1.4.min.js"></script>
+<script type="text/javascript" src="../../static/plugins/url.min.js"></script>
+<script type="text/javascript" src="../../static/plugins/vue.min.js"></script>
+<script type="text/javascript" src="../../static/plugins/vue-resource.min.js"></script>
+<script type="text/javascript" src="../../static/plugins/sm/sm.min.js"></script>
+<script type="text/javascript" src="../../static/scripts/common.js"></script>
+<script type="text/javascript" src="../../static/scripts/20170719hd/index.js"></script>
+</body>
+</html>

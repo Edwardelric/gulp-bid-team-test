@@ -1,0 +1,21 @@
+<div class="backtop" v-if="basicInfo.showBackTopFlag" @click="backTop"></div>
+<div class="share" v-if="basicInfo.showShareFlag" @click="share"></div>
+<ul class="download" v-if="basicInfo.showDownloadFlag">
+    <li>
+        <img src="../../static/images/common/logo.png"/>
+        <template v-if="basicInfo.showDownloadFlag && basicInfo.showDownloadTpl">
+            <div v-html="basicInfo.showDownloadTpl"></div>
+        </template>
+        <template v-if="!basicInfo.showDownloadTpl">
+            <div>
+                <p>下载车享家APP，抢1元洗车</p>
+            </div>
+        </template>
+    </li>
+    <li v-if="basicInfo.linkTpl" v-html="basicInfo.linkTpl"></li>
+    <li v-if="!basicInfo.linkTpl">
+        <a href="https://cxb.chexiang.com/service/version/getLatestAppVersion/0?channel=cxjtyg" ca="车享家体验馆_车享家体验馆$下载" id="hrefHost">
+            立即下载
+        </a>
+    </li>
+</ul>

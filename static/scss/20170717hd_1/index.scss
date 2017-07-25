@@ -1,0 +1,65 @@
+.intro-section {
+  margin-top: -2px;
+  background: #6c2edf;
+}
+.intro-list {
+  margin-top: -1px;
+  img {
+    display: block;
+  }
+}
+.week-star{
+  img {
+    display: block;
+  }
+}
+.list-wrapper {
+  margin-top: -32px;
+}
+.flow {
+  img {
+    display: block;
+  }
+}
+.rules {
+  background: #7a43e2;
+  padding-bottom: 5rem;
+  &.active {
+    padding-bottom: 8.4rem;
+  }
+  h3 {
+    padding: 2.7rem 0 1.75rem 0;
+    color: #fff;
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  ol {
+    padding: 0 2.25rem 0 3.6rem;
+    li {
+      list-style-type: decimal;
+      list-style-position: outside;
+    }
+    li {
+      color: #fff;
+      font-size: 1.3rem;
+      line-height: 2.2rem;
+    }
+  }
+}
+.invite-btn {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width:100%;
+  a {
+    display: block;
+    height: 4.8rem;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background: #ec4e29;
+    color: #fff;
+    font-size: 1.7rem;
+    line-height: 4.8rem;
+    text-align: center;
+  }
+}

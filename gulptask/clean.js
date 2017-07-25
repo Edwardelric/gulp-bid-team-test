@@ -1,24 +1,21 @@
 /*
-*   Created by Edward 10/8/2016
+ *    Created by Edward 15/6/2017
 * */
 
-var gulp = require('gulp');
-var del  = require('del');
+var gulp   = require('gulp');
+var del    = require('del');
+var config = require('../config');
 
-var sourcePath = {
-    'styles'     : 'static/styles',
-    'spriteImg'  : 'static/images/sprite/auto-sprite.png',
-    'spriteScss' : 'static/scss/components/_auto-sprite.scss'
+var path = {
+    'sourcePath': './static/styles',
+    'compileHtml': './view_temp/' + config.gulpHdName,
+    'distPath': './dist/'
 };
 
-var distPath = {
-    'dist'       : 'dist',
-}
-
-gulp.task('clean-dev',function(){
-    del.sync([sourcePath.styles,sourcePath.spriteImg,sourcePath.spriteScss]);
+gulp.task('clean',function(){
+    del.sync([path.compileHtml, path.sourcePath]);
 });
 
-gulp.task('clean-build',function(){
-    del.sync([distPath.dist]);
+gulp.task('build-clean',function(){
+    del.sync([path.distPath]);
 });

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>人气挑战赛</title>
+<link rel="dns-prefetch" href="//h.jia.chexiang.com">
+<link href="../../static/plugins/sm/sm.min.css" rel="stylesheet">
+<link href="../../static/styles/main.css" rel="stylesheet">
+<link href="../../static/styles/20170717hd_1/index.css" rel="stylesheet">
+<script type="text/javascript">
+    // 字体控制
+    function setFontsize() {
+        document.querySelector('html').style.fontSize = (window.screen.width / 375 * 10 + 'px');
+    }
+    setFontsize();
+</script>
+</head>
+<body>
+<div id="myApp"  class="wrapper" v-cloak>
+    <section>
+    <img src="../../static/images/20170717hd/bg.jpg" />
+</section>
+<section class="intro-section">
+    <img src="../../static/images/20170717hd/invite.png"/>
+</section>
+<section class="intro-list">
+    <img src="../../static/images/20170717hd/invite-list.png"/>
+</section>
+<section class="week-star">
+    <img src="../../static/images/20170717hd/invite-list-1.png"/>
+</section>
+<section class="flow">
+    <img src="../../static/images/20170717hd/flow.jpg" />
+</section>
+<section class="week-star list-wrapper">
+    <img src="../../static/images/20170717hd/list-img.png">
+</section>
+<section class="week-star">
+    <img src="../../static/images/20170717hd/list-img-1.png">
+</section>
+<section class="rules active">
+    <h3>活动规则</h3>
+    <ol>
+        <li>活动时间：8月1日00:00-8月31日24:00，所有到店和注册时间需要在8月1日00:00-8月31日24:00，才算有效，早于或迟于均不在范围之内；</li>
+        <li>活动对象：车享家注册用户均可参与，活动期间注册成功后也可参与活动；</li>
+        <li>月度挑战赛将会进行三次放榜，分别为速榜，中榜和终榜，放榜时间分别为8月7日，8月18日和9月1日，请持续关注榜单情况；</li>
+        <li>奖励发放：到店人气之星和注册人气之星于9月1日公布，每周人气之星于每周一公布上周人气之星，所有人气之星的奖励将于活动结束后15个工作日发放；</li>
+        <li>小保养为4L装赛倍飒半合成小保养套餐，含机滤和工时，iPhone6s配置以收到实物为准，20次洗车卡为1年有效期；</li>
+        <li>本次活动与苹果公司无关；</li>
+        <li>本次活动，车享家拥有在法律规定范围内的解释权。</li>
+    </ol>
+</section>
+<div v-if="!basicInfo.showDownloadFlag" class="invite-btn">
+    <a :href="inviteUrl">立即去邀请</a>
+</div>
+    <div class="backtop" v-if="basicInfo.showBackTopFlag" @click="backTop"></div>
+<div class="share" v-if="basicInfo.showShareFlag" @click="share"></div>
+<ul class="download" v-if="basicInfo.showDownloadFlag">
+    <li>
+        <img src="../../static/images/common/logo.png"/>
+        <template v-if="basicInfo.showDownloadFlag && basicInfo.showDownloadTpl">
+            <div v-html="basicInfo.showDownloadTpl"></div>
+        </template>
+        <template v-if="!basicInfo.showDownloadTpl">
+            <div>
+                <p>下载车享家APP，抢1元洗车</p>
+            </div>
+        </template>
+    </li>
+    <li v-if="basicInfo.linkTpl" v-html="basicInfo.linkTpl"></li>
+    <li v-if="!basicInfo.linkTpl">
+        <a href="//cxb.chexiang.com/service/version/getLatestAppVersion/0?channel=cxjtyg" ca="车享家体验馆_车享家体验馆$下载">
+            立即下载
+        </a>
+    </li>
+</ul>
+</div>
+<script type="text/javascript" src="//s1.cximg.com/jssdk/1.0.0/lb.min.js?v4.0"></script>
+<script type="text/javascript" src="//res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script id="analyticsScript" src="//data.chexiang.com/js/cx_analytics.js"></script>
+<script type="text/javascript">
+    window._caProtocol = (("http:" == document.location.protocol) ? " http://" : " https://");
+    document.write(decodeURIComponent("%3Cscript src='" + _caProtocol + "data.chexiang.com/js/ca.min.js?t=" + new Date().getTime() + "&type=' type='text/javascript'%3E" + "%3C/script%3E"));
+</script>
+<script type="text/javascript" src="https://s1.cximg.com/cxlib/assets/js/zepto/zepto-1.1.4.min.js"></script>
+<script type="text/javascript" src="../../static/plugins/url.min.js"></script>
+<script type="text/javascript" src="../../static/plugins/vue.min.js"></script>
+<script type="text/javascript" src="../../static/plugins/vue-resource.min.js"></script>
+<script type="text/javascript" src="../../static/plugins/sm/sm.min.js"></script>
+<script type="text/javascript" src="../../static/scripts/common.js"></script>
+<script type="text/javascript" src="../../static/scripts/20170717hd_1/index.js"></script>
+</body>
+</html>
