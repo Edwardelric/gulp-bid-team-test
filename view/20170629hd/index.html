@@ -1,0 +1,101 @@
+<section class="wrapper">
+    <section>
+        <img src="../../static/images/20170629hd/bg-0.jpg" class="customer-img"/>
+    </section>
+    <section class="bg-1"></section>
+    <div class="video-wrapper" id="videoWrapper">
+        <video controls id="video" height="150">
+            <source src="https://cxjapp.oss-cn-shanghai.aliyuncs.com/video_test/video_test_pre/chongqing0630v1.1.mp4" type="video/mp4">
+            您的浏览器不支持 HTML5 video 标签。
+        </video>
+    </div>
+    <dl class="service-list">
+        <dt>服务一</dt>
+        <dd>爱车清洗</dd>
+        <dd>洗车，其实没那么简单</dd>
+    </dl>
+    <dl class="service-list">
+        <dt>服务二</dt>
+        <dd>后视镜玻璃镀膜</dd>
+        <dd>小服务，给你“魔术”般惊喜</dd>
+    </dl>
+    <dl class="service-list">
+        <dt>服务三</dt>
+        <dd>可视化蒸发箱检测</dd>
+        <dd>直观感受爱车的空调系统</dd>
+    </dl>
+    <section class="bg-2"></section>
+    <section class="bg-3">
+        <form >
+            <div>
+                <i>＊</i>
+                <input type="text" placeholder="请填写您的姓名" maxlength="20"/>
+            </div>
+            <div>
+                <i>＊</i>
+                <input type="text" placeholder="请填写您的手机号" maxlength="11"/>
+            </div>
+            <div>
+                <i>＊</i>
+                <input type="text" placeholder="请填写您到店体验的车牌号" maxlength="10"/>
+            </div>
+            <div>
+                <i>＊</i>
+                <select id="storeName">
+                    <option value='0'>请选择您的体验门店</option>
+                    <option value="浦东杨南路店">浦东杨南路店</option>
+                </select>
+            </div>
+            <div>
+                <i>＊</i>
+                <input type="text" data-toggle='date' id="activityTime" placeholder="请选择您的体验时间"/>
+            </div>
+            <div>
+                <i>＊</i>
+                <select id="expericeProject">
+                    <option value='0'>请选择您的体验项目</option>
+                    <option value="自主免费洗车">自主免费洗车</option>
+                    <option value="自主免费后视镜镀膜">自主免费后视镜镀膜</option>
+                    <option value="自主免费可视化蒸发箱检测">自主免费可视化蒸发箱检测</option>
+                </select>
+            </div>
+        </form>
+        <div class="submit-btn">提交</div>
+    </section>
+    <section class="bg-4"></section>
+    <ul class="rules">
+        <li>
+            <span>活动时间：</span>
+            <p>2017年6月30日至2017年12月31日</p>
+        </li>
+        <li>
+            <span>活动对象：</span>
+            <p>重庆车主</p>
+        </li>
+        <li>
+            <span>活动门店：</span>
+            <p>车享家重庆门店</p>
+        </li>
+        <li>
+            <span>参与方式：</span>
+            <p>活动页留资报名，车享家工作人员将会在3个工作日内与您联系；</p>
+        </li>
+        <li>
+            <span>活动奖品：</span>
+            <p>您可以获得车享家免费服务体验项目1次，将您的体验感受&照片分享到朋友圈还有额外小礼品哦!</p>
+        </li>
+        <li>
+            <span>其他说明：</span>
+            <p>为保证您的体验感受，<strong>每家门店的每天服务项目次数有限</strong>，如果超过门店当日上限，则体验日期顺延，<strong>具体体验时间以门店电话沟通为准</strong>；每个手机号&每个车牌号只能报名参加一次哦！</p>
+        </li>
+    </ul>
+    <div class="mask" :class="{'active':submitSuccess}"></div>
+    <div class="modal-wrapper" :class="{'active':submitSuccess}">
+        <div class="modal-content">
+            <img src="../../static/images/20170629hd/right.png" />
+            <h4>恭喜您，提交成功！</h4>
+            <p>我们会在3个工作日内与您联系</p>
+            <div class="button" @click="submitSuccess = false; calendarFlag = false;">确认</div>
+        </div>
+    </div>
+</section>

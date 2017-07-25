@@ -1,0 +1,80 @@
+.share {
+  position: fixed;
+  right: 1rem;
+  bottom: 17.4rem;
+  z-index: 1000;
+  width: 5.1rem;
+  height: 5.1rem;
+  background: transparent url(../images/common/share.png) center center no-repeat;
+  background-size: contain;
+  &.active {
+    display: block;
+  }
+}
+.backtop {
+  position: fixed ;
+  right: 1rem;
+  bottom: 8.4rem;
+  width: 5.2rem;
+  height: 5.2rem;
+  background: transparent url(../images/common/backtop.png) center center no-repeat;
+  background-size: contain;
+  &.active {
+    display: block;
+  }
+}
+.download {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 6rem;
+  background: #ffffff ;
+  &.active {
+    display: block;
+  }
+  .close {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3.8rem;
+    height: 6rem;
+    background: transparent url(../images/common/download-icon-close.png) center center no-repeat;
+    background-size: 1.4rem 1.4rem;
+  }
+  .content {
+    height: 6rem;
+    margin-left: 3.8rem;
+    padding-left: 4.2rem;
+    background: transparent url(../images/common/download-icon-chexiang.png) left center no-repeat;
+    background-size: 4rem 4rem;
+    text-align: left;
+    .text1 {
+      padding-top: 1.3rem ;
+      font-size: 1.3rem;
+      color: #bdc3c6;
+    }
+    .text2 {
+      font-size: 1.6rem;
+      color: #243742;
+      em {
+        color: #ff0000;
+        font-weight: 800;
+      }
+    }
+  }
+  .btn {
+    position: absolute ;
+    top: 50%;
+    right: 1.5rem;
+    width: 7.4rem;
+    height: 3.2rem;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    background: transparent url(../images/common/download-icon-btn.png) center center no-repeat;
+    background-size: 7.4rem 3.2rem;
+  }
+}
+[v-cloak] {
+  display: none;
+}

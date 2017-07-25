@@ -1,35 +1,33 @@
 /*
- *   Created by Edward 10/8/2016
+ *    Created by Edward 15/6/2017
  * */
 
-var gulp = require('gulp');
-var requireDir = require('require-dir');
-var connect = require('gulp-connect');
+var gulp        = require('gulp');
+var requireDir  = require('require-dir');
+var connect     = require('gulp-connect');
+var browserSync = require('browser-sync');
+var proxy       = require('http-proxy-middleware');
 
 requireDir('./gulptask',{ recurse: true });
 
+gulp.task('watch', ['watch-html', 'watch-sass', 'watch-scripts']);
 
+gulp.task('compile-html', ['html']);
 
-// gulp.task('watch',['watchSass']);
+gulp.task('compile-sass', ['sass']);
 
-// gulp.task('dev',['clean-dev','sass','watch']);
+gulp.task('default', ['browser-sync', 'clean', 'compile-html', 'compile-sass', 'watch']);
 
-// gulp.task('prdbuild',['clean-build','sass-release','js-release']);
-//
-// gulp.task('prebuild',['clean-build','sass-release','js-release']);
-//
-// gulp.task('sitbuild',['clean-build','sass-release','js-release']);
+gulp.task('build', ['build-clean', 'build-html', 'build-sass', 'build-scripts', 'build-images']);
 
+var middleware = proxy('/store', {target: 'http://h.jia.chexiangsit.com', changeOrigin: true});
+var middleware2 = proxy('/activity', {target: 'http://h.jia.chexiangsit.com', changeOrigin: true});
 
-
-
-gulp.task('watch', ['watchTpl', 'watchScss']);
-
-gulp.task('default',['connect', 'scss','watch']);
-
-gulp.task('connect', function() {
-    connect.server({
-        port: 8888,
-        livereload: true
+gulp.task('browser-sync', function() {
+    browserSync({
+        server: {
+            baseDir: "./",
+            middleware: [middleware, middleware2]
+        }
     });
 });
