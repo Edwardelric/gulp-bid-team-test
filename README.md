@@ -11,7 +11,7 @@
   * npm:  v5.0.0
 
 ## 测试环境
-  * sit 域名：h.jia.chexiangsit.com
+  * sit 域名：h.jia.chexiangsit1.com
   * pre 域名：h.jia.chexiangpre.com
   * prd 域名：h.jia.chexiang.com
 
